@@ -1,0 +1,726 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<!-- Mirrored from html.geekcodelab.com/courseshub/courses-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jan 2026 11:32:29 GMT -->
+
+<head>
+    <title>تفاصيل الدورة - خمسه بلاننينج</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="خمسه بلاننينج, دورات اونلاين, تعليم">
+    <meta name="description" content="خمسه بلاننينج - منصة الدورات التدريبية والتعليم الإلكتروني">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FavIcon Link -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+    <!-- Google Fonts - Tajawal (Non-render-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+    </noscript>
+    <!-- Critical: loader + body.fixed (inline so loader appears first and styled before main CSS) -->
+    <style>
+        body.fixed {
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .loader-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #f3f6fa;
+            z-index: 999;
+        }
+
+        .loader-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .loading-container,
+        .loading {
+            width: 140px;
+            height: 140px;
+            border-radius: 100%;
+            position: relative;
+        }
+
+        .loading {
+            border: 1px solid transparent;
+            border-color: transparent #ffbd59 transparent #ffbd59;
+            animation: rotate-loading 1.5s linear infinite;
+            transform-origin: 50% 50%;
+        }
+
+        .loading-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(-90deg, #ffbd59 0%, #ffd28c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+        }
+
+        @keyframes rotate-loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Prevent CLS with aspect-ratio */
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+        }
+
+        img[width][height] {
+            aspect-ratio: attr(width) / attr(height);
+            height: auto;
+        }
+    </style>
+    <!-- Main Style CSS Link -->
+    <link rel="preload" href="assets/css/bundles/courses-detail.bundle.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bundles/courses-detail.bundle.css">
+    </noscript>
+    <!-- Main Style CSS Link -->
+
+    <noscript></noscript>
+</head>
+
+<body class="fixed">
+    <!-- Loader Start -->
+    <div class="loader-box">
+        <div class="loader-content">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div class="loading-icon">
+                    <img class="main-load" src="assets/images/loader-image.svg" width="56" height="50"
+                        alt="صورة التحميل" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="top-header-content-box">
+                            <p>اشترك اليوم وطور مهاراتك مع دورات خمسة بلاننج المُصممة للتطبيق العملي</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-2">
+                        <div class="site-branding">
+                            <a href="index.html" title="خمسه بلاننينج">
+                                <img src="assets/images/logo.webp" alt="خمسه بلاننينج" width="120" height="77"
+                                    fetchpriority="high">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-9 col-lg-10">
+                        <div class="header-menu">
+                            <nav class="main-navigation">
+                                <button class="toggle-button" aria-label="القائمة" aria-expanded="false">
+                                    <span></span>
+                                </button>
+                                <div class="mobile-menu-box">
+                                    <div class="search-input for-mobile">
+                                        <div class="search-input-box">
+                                            <form>
+                                                <input type="text" name="search" class="form-input search-query-input" id="mobileSearchInput" placeholder="ابحث هنا..." autocomplete="off">
+                                                <button type="submit" class="sec-btn">
+                                                    <span><img src="assets/images/search-icon.svg" width="18"
+                                                            height="18" alt="أيقونة البحث" loading="lazy"></span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="header-menu-container">
+                                        <ul>
+                                            <!-- الرئيسية -->
+                                            <li>
+                                                <a href="index.html" title="الرئيسية">الرئيسية</a>
+                                            </li>
+                                            <!-- من نحن -->
+                                            <li>
+                                                <a href="about-us.html" title="من نحن">من نحن</a>
+                                            </li>
+                                            <!-- الدورات -->
+                                            <li class="sub-items active">
+                                                <a href="javascript:void(0);" title="الدورات">الدورات</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="courses-grid.html" title="شبكة الدورات">شبكة
+                                                            الدورات</a></li>
+                                                    <li><a href="courses-detail.html" title="تفاصيل الدورة">تفاصيل
+                                                            الدورة</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- المدونة -->
+                                            <li>
+                                                <a href="blog-grid.html" title="المدونة">المدونة</a>
+                                            </li>
+                                            <!-- تواصل معنا -->
+                                            <li>
+                                                <a href="contact-us.html" title="تواصل معنا">تواصل معنا</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Search Icon -->
+                                <div class="header-icon-wp">
+                                    <div class="search-wp">
+                                        <div class="search-icon-box">
+                                            <a href="javascript:void(0);" class="search-icon">
+                                                <img src="assets/images/search-icon.svg" width="20" height="20"
+                                                    alt="أيقونة البحث" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="search-input">
+                                            <div class="search-input-box">
+                                                <form
+                                                    style="display: flex; justify-content: space-between; width: 400px; gap: 10px; margin-top: 40px; margin-inline: auto;">
+                                                    <input type="text" name="search" class="form-input search-query-input" id="desktopSearchInput" placeholder="ابحث هنا..." autocomplete="off">
+                                                    <button type="submit" class="sec-btn">
+                                                        <span><img src="assets/images/search-icon.svg" width="18"
+                                                                height="18" alt="أيقونة البحث" loading="lazy"></span>
+                                                    </button>
+                                                </form>
+                                                <!-- Search Results Dropdown -->
+                                                <div class="search-results-dropdown" id="desktopSearchDropdown">
+                                                    <div class="search-results-list">
+                                                        <!-- Results will be populated by JavaScript -->
+                                                    </div>
+                                                    <div class="search-no-results" style="display: none;">
+                                                        <i class="fa-solid fa-search"></i>
+                                                        <p>لا توجد نتائج للبحث</p>
+                                                    </div>
+                                                    <div class="search-loading" style="display: none;">
+                                                        <i class="fa-solid fa-spinner fa-spin"></i>
+                                                        <p>جاري البحث...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- Login | Register Button -->
+
+                                <!-- <div class="header-btn header-auth-links sec-btn" style="display: none;">
+                                    <a href="login.html" class="header-auth-link" title="تسجيل الدخول"><span>تسجيل
+                                            الدخول</span></a>
+                                    <span class="header-auth-sep" aria-hidden="true">|</span>
+                                    <a href="register.html" class="header-auth-link" title="إنشاء حساب"><span>إنشاء
+                                            حساب</span></a>
+                                </div> -->
+                                <div class="header-btn header-auth-links sec-btn">
+                                    <a href="profile.html" class="header-profile-link" title="حسابي">
+                                        <i class="fas fa-user"></i>
+                                        <span>رنا مدكور</span>
+                                    </a>
+                                </div>
+                            </nav>
+                            <div class="black-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="inner-banner">
+        <div class="main-banner-bg-shape">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-content text-center">
+                        <h1 class="h1-title">تفاصيل الدورة</h1>
+                        <div class="banner-breadcrum">
+                            <ul>
+                                <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                                <li><i class="fa-solid fa-angle-right"></i></li>
+                                <li><a href="courses-grid.html" title="الدورات">الدورات</a></li>
+                                <li><i class="fa-solid fa-angle-right"></i></li>
+                                <li>تفاصيل الدورة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Course Detail Info Start -->
+    <section class="course-detail-sec sec-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="course-detail-box">
+                        <div class="course-detail-image wow fadeup-animation" data-wow-duration="0.8s"
+                            data-wow-delay="0.2s">
+                            <img src="assets/images/course-detail-image-1.jpg" width="830" height="500"
+                                alt="صورة الدورة" loading="lazy">
+                        </div>
+                        <div class="course-detail-content wow fadeup-animation" data-wow-duration="0.8s"
+                            data-wow-delay="0.3s">
+                            <div class="post-tag">
+                                <span>التسويق</span>
+                            </div>
+                            <div class="course-detail-title">
+                                <h3 class="h3-title">كيف تسوق نفسك كمدرب أو مستشار</h3>
+                            </div>
+
+                            <div class="course-detail-description-text">
+                                <p>
+                                    في هذه الدورة الشاملة، ستتعلم أفضل الاستراتيجيات والتقنيات لتسويق نفسك كمدرب أو
+                                    مستشار محترف.
+                                    سنغطي كيفية بناء علامتك التجارية الشخصية، وجذب العملاء المثاليين، وإنشاء حضور قوي
+                                    على الإنترنت.
+                                </p>
+                                <p>ستكتسب المهارات العملية التي تحتاجها لتحويل خبرتك إلى عمل مربح ومستدام في مجال
+                                    التدريب والاستشارات.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="course-detail-sidebar">
+                        <div class="course-fees-info-box wow fadeup-animation" data-wow-duration="0.8s"
+                            data-wow-delay="0.2s">
+                            <div class="course-video-box-wp">
+
+                                <div class="course-video-description">
+                                    <div class="course-fees">
+                                        <p>رسوم الدورة:</p>
+                                        <h4 class="h4-title">٣٢٠ <img src="assets/images/logo/saudi-riyal.webp.png"
+                                                width="18" height="18" alt="ريال" class="saudi-riyal-icon"
+                                                style="vertical-align: middle; max-width: 18px; max-height: 18px;"><img src="assets/images/logo/egyptian-pound.png" width="16" height="16" alt="جنيه" class="egp-icon" style="display: none; vertical-align: middle; max-width: 16px; max-height: 16px;"></h4>
+                                    </div>
+                                    <p>ضمان استرداد الأموال خلال 30 يوم</p>
+                                    <div class="course-join-btn ">
+                                        <!-- Initial Button -->
+                                        <a href="javascript:void(0);" id="mainJoinBtn" class="sec-btn"
+                                            style="margin: 20px 0; display: flex; justify-content: center;"
+                                            title="اشترك الآن">
+                                            <span>اشترك الآن</span>
+                                        </a>
+
+                                        <!-- Auth Options (Hidden by default) -->
+                                        <div id="authButtons"
+                                            style="display: none; flex-direction: row; gap: 10px; width: 100%;">
+                                            <button id="btnLogin" class="sec-btn"
+                                                style="width: 100%; justify-content: center; background: #1B3F60; color: white !important;">
+                                                <span style="color: white !important;">تسجيل الدخول</span>
+                                            </button>
+                                            <button id="btnNoAccount" class="sec-btn"
+                                                style="width: 100%; justify-content: center; background: rgb(150, 149, 149); color: white !important;">
+                                                <span style="color: white !important;">ليس لدي حساب</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-includes-wp">
+                                <h4 class="h4-title">محتويات الدورة:</h4>
+                                <ul>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-book"></i>
+                                        </span>
+                                        <p>10 دروس</p>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-clock"></i>
+                                        </span>
+                                        <p>6 ساعات و 15 دقيقة</p>
+                                    </li>
+
+                                    <li>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-globe"></i>
+                                        </span>
+                                        <p>اللغة العربية</p>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="fa-solid fa-user-graduate"></i>
+                                        </span>
+                                        <p>2000 طالب</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="recent-courses-added-wp wow fadeup-animation" data-wow-duration="0.8s"
+                            data-wow-delay="0.2s">
+                            <h4 class="underline-title">أحدث الدورات</h4>
+
+                            <div class="recent-courses-added-box-wp">
+                                <div class="recent-courses-added-box">
+                                    <div class="recent-courses-added-image">
+                                        <img src="assets/images/recent-course-image-1.jpg" width="100" height="100"
+                                            alt="دورة حديثة" loading="lazy">
+                                    </div>
+                                    <div class="recent-courses-added-content">
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="recent-courses-added-title">
+                                            <a href="courses-detail.html" title="دورة تطوير المهارات القيادية">دورة
+                                                تطوير المهارات القيادية</a>
+                                        </div>
+                                        <div class="recent-courses-added-price">
+                                            <p>25 <img src="assets/images/logo/saudi-riyal.webp.png" width="12"
+                                                    height="12" alt="ريال" class="saudi-riyal-icon"
+                                                    style="vertical-align: middle; max-width: 12px; max-height: 12px;"><img src="assets/images/logo/egyptian-pound.png" width="16" height="16" alt="جنيه" class="egp-icon" style="display: none; vertical-align: middle; max-width: 16px; max-height: 16px;">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-courses-added-box">
+                                    <div class="recent-courses-added-image">
+                                        <img src="assets/images/recent-course-image-2.jpg" width="100" height="100"
+                                            alt="دورة حديثة" loading="lazy">
+                                    </div>
+                                    <div class="recent-courses-added-content">
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="recent-courses-added-title">
+                                            <a href="courses-detail.html" title="دورة أساسيات إدارة المشاريع">دورة
+                                                أساسيات إدارة المشاريع</a>
+                                        </div>
+                                        <div class="recent-courses-added-price">
+                                            <p>40 <img src="assets/images/logo/saudi-riyal.webp.png" width="12"
+                                                    height="12" alt="ريال" class="saudi-riyal-icon"
+                                                    style="vertical-align: middle; max-width: 12px; max-height: 12px;"><img src="assets/images/logo/egyptian-pound.png" width="16" height="16" alt="جنيه" class="egp-icon" style="display: none; vertical-align: middle; max-width: 16px; max-height: 16px;">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-courses-added-box">
+                                    <div class="recent-courses-added-image">
+                                        <img src="assets/images/recent-course-image-3.jpg" width="100" height="100"
+                                            alt="دورة حديثة" loading="lazy">
+                                    </div>
+                                    <div class="recent-courses-added-content">
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="recent-courses-added-title">
+                                            <a href="courses-detail.html" title="البيانات الضخمة للمبتدئين">البيانات
+                                                الضخمة للمبتدئين</a>
+                                        </div>
+                                        <div class="recent-courses-added-price">
+                                            <p>96 <img src="assets/images/logo/saudi-riyal.webp.png" width="12"
+                                                    height="12" alt="ريال" class="saudi-riyal-icon"
+                                                    style="vertical-align: middle; max-width: 12px; max-height: 12px;"><img src="assets/images/logo/egyptian-pound.png" width="16" height="16" alt="جنيه" class="egp-icon" style="display: none; vertical-align: middle; max-width: 16px; max-height: 16px;">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-courses-added-box">
+                                    <div class="recent-courses-added-image">
+                                        <img src="assets/images/recent-course-image-4.jpg" width="100" height="100"
+                                            alt="دورة حديثة" loading="lazy">
+                                    </div>
+                                    <div class="recent-courses-added-content">
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="recent-courses-added-title">
+                                            <a href="courses-detail.html" title="How to Write the Ultimate 1 Page">How
+                                                to Write the Ultimate 1 Page</a>
+                                        </div>
+                                        <div class="recent-courses-added-price">
+                                            <p>11 <img src="assets/images/logo/saudi-riyal.webp.png" width="12"
+                                                    height="12" alt="ريال" class="saudi-riyal-icon"
+                                                    style="vertical-align: middle; max-width: 12px; max-height: 12px;"><img src="assets/images/logo/egyptian-pound.png" width="16" height="16" alt="جنيه" class="egp-icon" style="display: none; vertical-align: middle; max-width: 16px; max-height: 16px;">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Course Detail Info End -->
+
+    <!-- Apply Now Start -->
+    <section class="apply-now-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="apply-now-box wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="apply-now-shape animate-this">
+                            <img src="assets/images/newsletter-bg-shape.svg" width="838" height="488" alt="خلفية زخرفية"
+                                loading="lazy">
+                        </div>
+                        <div class="apply-now-content">
+                            <div class="apply-now-image-box">
+                                <img src="assets/images/cta/apply-now-image.webp" width="305" height="287"
+                                    alt="صورة التسجيل" loading="lazy">
+                            </div>
+                            <div class="apply-now-text">
+                                <div class="sec-title">
+                                    <span class="sub-title">سجل الآن</span>
+                                    <h3 class="h3-title">احصل على شهادة مهاراتك الآن!</h3>
+                                </div>
+                                <div class="apply-now-btn">
+                                    <a href="register.html" class="sec-btn" title="ابدأ الآن"><span>ابدأ الآن</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Apply Now End -->
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <div class="top-footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <a href="index.html" title="خمسه بلاننينج">
+                                    <img src="assets/images/logo-light.webp" class="footer-logo-img" width="125"
+                                        height="80" alt="خمسه بلاننينج">
+                                </a>
+                            </div>
+                            <div class="footer-logo-about-text">
+                                <p>منصة تعليمية متكاملة تقدم أفضل الدورات التدريبية في مختلف المجالات مع مدربين متخصصين.
+                                </p>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="underline-title">تابعنا</h3>
+                                <div class="footer-social-icons">
+                                    <a href="https://www.facebook.com/" title="تابعنا على فيسبوك" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="https://www.instagram.com/" title="تابعنا على انستجرام" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.linkedin.com/" title="تابعنا على لينكد إن" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="our-link-box">
+                            <div class="our-link-content">
+                                <h3 class="underline-title">روابط سريعة</h3>
+                                <ul>
+                                    <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                                    <li><a href="about-us.html" title="من نحن">من نحن</a></li>
+                                    <li><a href="courses-grid.html" title="الدورات">الدورات</a></li>
+                                    <li><a href="faq.html" title="الأسئلة الشائعة">الأسئلة الشائعة</a></li>
+                                    <li><a href="blog-grid.html" title="المدونة">المدونة</a></li>
+                                    <li><a href="contact-us.html" title="تواصل معنا">تواصل معنا</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="our-link-box">
+                            <div class="our-link-content">
+                                <h3 class="underline-title">أهم التصنيفات</h3>
+                                <ul>
+                                    <li><a href="courses-grid.html" title="التصميم والفنون">التصميم والفنون</a></li>
+                                    <li><a href="courses-grid.html" title="علوم البيانات">علوم البيانات</a></li>
+                                    <li><a href="courses-grid.html" title="إدارة الأعمال">إدارة الأعمال</a></li>
+                                    <li><a href="courses-grid.html" title="التسويق الرقمي">التسويق الرقمي</a></li>
+                                    <li><a href="courses-grid.html" title="تطوير الذات">تطوير الذات</a></li>
+                                    <li><a href="courses-grid.html" title="المالية والمحاسبة">المالية والمحاسبة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-box">
+                            <h3 class="underline-title">تواصل معنا</h3>
+                            <ul>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="contact-us.html" title="العنوان">الرياض، المملكة العربية السعودية</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="tel:+966501234567" title="+966 50 123 4567">966501234567+</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="mailto:info@courseshub.com"
+                                            title="info@courseshub.com">info@courseshub.com</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom-box">
+                            <div class="copy-right">
+                                <p>جميع الحقوق محفوظة <img src="assets/images/logo/tech.webp" alt="خمسه بلاننينج"
+                                        class="footer-bottom-logo" width="50" height="32">© <span
+                                        id="copy-right-year"></span></p>
+                            </div>
+                            <div class="footer-bottom-link">
+                                <ul>
+                                    <li><a href="faq.html" title="سياسة الخصوصية">سياسة الخصوصية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back To Top Start -->
+    <div class="scroll-to-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Back To Top End -->
+
+    <!-- Jquery JS Link -->
+    <!-- Bg Moving JS Link -->
+    <!-- Back To Top JS Link -->
+    <!-- Bundled JS -->
+
+    <!-- Page Logic (editable) -->
+
+    <!-- Jquery JS Link -->
+
+    <!-- Bootstrap JS Link -->
+
+    <!-- Swiper Slider JS Link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Wow Animation JS Link -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Fancybox JS Link -->
+    <script src="assets/js/fancybox.min.js"></script>
+
+    <!-- Custom JS Link -->
+    <script src="assets/js/bg-moving.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
+
+    <!-- Page Logic -->
+
+    <!-- Bundled JS -->
+    <script src="assets/js/bundles/courses-detail.bundle.js"></script>
+    <!-- Page Logic -->
+    <script src="assets/js/pages/courses-detail.js"></script>
+
+    <!-- Auth Modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">التسجيل في الدورة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p style="margin-bottom: 20px; color: #555;">يرجى اختيار طريقة المتابعة:</p>
+                    <div class="d-grid gap-3">
+                        <button id="btnNoAccount" class="sec-btn"
+                            style="width: 100%; justify-content: center; background: #0d6efd; color: white;"><span>ليس
+                                لدي حساب</span></button>
+                        <button id="btnLogin" class="sec-btn"
+                            style="width: 100%; justify-content: center; background: #0d6efd; color: white;"><span>تسجيل
+                                الدخول</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<!-- Mirrored from html.geekcodelab.com/courseshub/courses-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jan 2026 11:32:36 GMT -->
+
+</html>

@@ -1,0 +1,1151 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>الملف الشخصي - خمسه بلاننينج</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="خمسه بلاننينج, دورات اونلاين, تعليم, الملف الشخصي">
+    <meta name="description" content="الملف الشخصي - إدارة حسابك ودوراتك في خمسه بلاننينج">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FavIcon Link -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+    <!-- Google Fonts - Tajawal (Non-render-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+    </noscript>
+    <!-- Critical: loader + body.fixed (inline so loader appears first and styled before main CSS) -->
+    <style>
+        body.fixed {
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .loader-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #f3f6fa;
+            z-index: 999;
+        }
+
+        .loader-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .loading-container,
+        .loading {
+            width: 140px;
+            height: 140px;
+            border-radius: 100%;
+            position: relative;
+        }
+
+        .loading {
+            border: 1px solid transparent;
+            border-color: transparent #ffbd59 transparent #ffbd59;
+            animation: rotate-loading 1.5s linear infinite;
+            transform-origin: 50% 50%;
+        }
+
+        .loading-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(-90deg, #ffbd59 0%, #ffd28c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+        }
+
+        @keyframes rotate-loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!-- Main Style CSS Link -->
+    <link rel="preload" href="assets/css/bundles/profile.bundle.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bundles/profile.bundle.css">
+    </noscript>
+</head>
+
+<body class="fixed">
+    <!-- Loader Start -->
+    <div class="loader-box">
+        <div class="loader-content">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div class="loading-icon">
+                    <img class="main-load" src="assets/images/loader-image.svg" width="56" height="50"
+                        alt="Loader image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="top-header-content-box">
+                            <p>اشترك اليوم وطور مهاراتك مع دورات خمسة بلاننج المُصممة للتطبيق العملي</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-2">
+                        <div class="site-branding">
+                            <a href="index.html" title="خمسه بلاننينج">
+                                <img src="assets/images/logo/logo.png" alt="كورسيز هب" width="120" height="77"
+                                    fetchpriority="high">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-9 col-lg-10">
+                        <div class="header-menu">
+                            <nav class="main-navigation">
+                                <button class="toggle-button" aria-label="القائمة" aria-expanded="false">
+                                    <span></span>
+                                </button>
+                                <div class="mobile-menu-box">
+                                    <div class="search-input for-mobile">
+                                        <div class="search-input-box">
+                                            <form>
+                                                <input type="text" name="search" class="form-input"
+                                                    placeholder="ابحث هنا..." required="">
+                                                <button type="submit" class="sec-btn">
+                                                    <span><img src="assets/images/search-icon.svg" width="18"
+                                                            height="18" alt="أيقونة البحث"></span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="header-menu-container">
+                                        <ul>
+                                            <!-- الرئيسية -->
+                                            <li class="active">
+                                                <a href="index.html" title="الرئيسية">الرئيسية</a>
+                                            </li>
+                                            <!-- من نحن -->
+                                            <li>
+                                                <a href="about-us.html" title="من نحن">من نحن</a>
+                                            </li>
+                                            <!-- الدورات -->
+                                            <li class="sub-items">
+                                                <a href="javascript:void(0);" title="الدورات">الدورات</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="courses-grid.html" title="شبكة الدورات">شبكة
+                                                            الدورات</a></li>
+                                                    <li><a href="courses-list.html" title="قائمة الدورات">قائمة
+                                                            الدورات</a></li>
+                                                    <li><a href="courses-detail.html" title="تفاصيل الدورة">تفاصيل
+                                                            الدورة</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- المدونة -->
+                                            <li>
+                                                <a href="blog-grid.html" title="المدونة">المدونة</a>
+                                            </li>
+                                            <!-- تواصل معنا -->
+                                            <li>
+                                                <a href="contact-us.html" title="تواصل معنا">تواصل معنا</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Search Icon -->
+                                <div class="header-icon-wp">
+                                    <div class="search-wp">
+                                        <div class="search-icon-box">
+                                            <a href="javascript:void(0);" class="search-icon">
+                                                <img src="assets/images/search-icon.svg" width="20" height="20"
+                                                    alt="أيقونة البحث">
+                                            </a>
+                                        </div>
+                                        <div class="search-input">
+                                            <div class="search-input-box">
+                                                <form>
+                                                    <input type="text" name="search" class="form-input"
+                                                        placeholder="ابحث هنا..." required="">
+                                                    <button type="submit" class="sec-btn">
+                                                        <span><img src="assets/images/search-icon.svg" width="18"
+                                                                height="18" alt="أيقونة البحث"></span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Login | Register Button -->
+                                <div class="header-btn header-auth-links sec-btn">
+                                    <a href="login.html" class="header-auth-link" title="تسجيل الدخول"><span>تسجيل
+                                            الدخول</span></a>
+                                    <span class="header-auth-sep" aria-hidden="true">|</span>
+                                    <a href="register.html" class="header-auth-link" title="إنشاء حساب"><span>إنشاء
+                                            حساب</span></a>
+                                </div>
+                            </nav>
+                            <div class="black-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="inner-banner">
+        <div class="main-banner-bg-shape">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-content text-center">
+                        <h1 class="h1-title">الملف الشخصي</h1>
+                        <div class="banner-breadcrum">
+                            <ul>
+                                <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                                <li><i class="fa-solid fa-angle-right"></i></li>
+                                <li>الملف الشخصي</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Profile Section Start -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="profile-sidebar">
+                        <!-- Profile Info Card -->
+                        <div class="profile-card">
+                            <div class="profile-avatar">
+                                <div class="avatar-circle">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                            </div>
+                            <h3 class="profile-name">أحمد محمد</h3>
+                            <p class="profile-email">ahmed@example.com</p>
+                        </div>
+
+                        <!-- Profile Navigation -->
+                        <div class="profile-nav">
+                            <ul>
+                                <li>
+                                    <a href="#my-profile" class="profile-nav-link" data-tab="my-profile">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span>معلوماتي الشخصية</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#my-courses" class="profile-nav-link active" data-tab="my-courses">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                        <span>دوراتي</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#change-password" class="profile-nav-link" data-tab="change-password">
+                                        <i class="fa-solid fa-lock"></i>
+                                        <span>تغيير كلمة المرور</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-8">
+                    <!-- Profile Content Wrapper - Fixed Container -->
+                    <div class="profile-content-wrapper">
+                        <!-- My Profile Tab -->
+                        <div class="profile-content-box profile-tab-content" id="my-profile">
+                            <div class="profile-content-header">
+                                <h2 class="h2-title">معلوماتي الشخصية</h2>
+                                <p>قم بتحديث معلوماتك الشخصية</p>
+                            </div>
+                            <form class="profile-form" id="profileInfoForm" novalidate>
+                                <div class="form-input-wp">
+                                    <label for="registrationDate">تاريخ التسجيل</label>
+                                    <input type="text" class="form-input" id="registrationDate" value="15 يناير 2024"
+                                        readonly disabled>
+                                </div>
+                                <div class="form-input-wp" id="nameFieldWrapper">
+                                    <label for="profileFullName">الاسم بالكامل <span
+                                            class="required-star">*</span></label>
+                                    <input type="text" class="form-input" id="profileFullName" name="fullName"
+                                        value="أحمد محمد" placeholder="أدخل الاسم بالكامل" required>
+                                    <span class="error-message" id="nameError"></span>
+                                </div>
+                                <div class="form-input-wp">
+                                    <label for="profileEmail">البريد الإلكتروني</label>
+                                    <input type="email" class="form-input" id="profileEmail" value="ahmed@example.com"
+                                        readonly disabled>
+                                </div>
+                                <div class="form-input-wp">
+                                    <label for="profilePhone">تليفون</label>
+                                    <input type="tel" class="form-input" id="profilePhone" value="+966 50 123 4567"
+                                        readonly disabled>
+                                </div>
+                                <div class="form-input-wp mb-0">
+                                    <button type="submit" class="sec-btn" id="profileUpdateBtn" disabled><span>تحديث
+                                            الملف</span></button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- My Courses Tab -->
+                        <div class="profile-content-box profile-tab-content active" id="my-courses">
+                            <div class="profile-content-header">
+                                <h2 class="h2-title">دوراتي</h2>
+                                <p>تتبع تقدمك في الدورات المسجل بها</p>
+                            </div>
+
+                            <!-- Courses Tabs -->
+                            <div class="courses-tabs">
+                                <ul class="courses-tabs-nav">
+                                    <li>
+                                        <button class="courses-tab-btn active" data-courses-tab="enrolled">الدورات
+                                            المسجَّل بها</button>
+                                    </li>
+                                    <li>
+                                        <button class="courses-tab-btn" data-courses-tab="active">الدورات
+                                            النشطة</button>
+                                    </li>
+                                    <li>
+                                        <button class="courses-tab-btn" data-courses-tab="completed">الدورات
+                                            المكتملة</button>
+                                    </li>
+                                </ul>
+
+                                <!-- Enrolled Courses Tab Content -->
+                                <div class="courses-tab-content active" id="enrolled-courses">
+                                    <!-- Empty State - shown when no courses -->
+                                    <div class="empty-courses-state" style="display: none;">
+                                        <div class="empty-state-icon">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                        </div>
+                                        <h4 class="empty-state-title">لم تسجل في أي دورة بعد</h4>
+                                        <p class="empty-state-text">ابدأ رحلتك التعليمية الآن واكتشف مجموعة متنوعة من
+                                            الدورات التدريبية</p>
+                                        <a href="courses-grid.html" class="sec-btn" title="تصفح الدورات"><span>تصفح
+                                                الدورات</span></a>
+                                    </div>
+                                    <!-- Courses List -->
+                                    <div class="row courses-list">
+                                        <!-- Course Card 1 -->
+                                        <div class="col-md-6">
+                                            <div class="enrolled-course-card">
+                                                <div class="course-thumb">
+                                                    <img src="assets/images/top-course-1.jpg" alt="دورة تطوير الويب">
+                                                </div>
+                                                <div class="course-info">
+                                                    <h4 class="course-title">تطوير تطبيقات الويب</h4>
+                                                    <div class="course-progress">
+                                                        <div class="progress-bar-wrapper">
+                                                            <div class="progress-bar" style="width: 65%;"></div>
+                                                        </div>
+                                                        <span class="progress-text">65% مكتمل</span>
+                                                    </div>
+                                                    <a href="video-detail.html" class="sec-btn sm-btn"><span>متابعة
+                                                            التعلم</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Course Card 2 -->
+                                        <div class="col-md-6">
+                                            <div class="enrolled-course-card">
+                                                <div class="course-thumb">
+                                                    <img src="assets/images/top-course-2.jpg" alt="دورة التسويق الرقمي">
+                                                </div>
+                                                <div class="course-info">
+                                                    <h4 class="course-title">التسويق الرقمي المتقدم</h4>
+                                                    <div class="course-progress">
+                                                        <div class="progress-bar-wrapper">
+                                                            <div class="progress-bar" style="width: 30%;"></div>
+                                                        </div>
+                                                        <span class="progress-text">30% مكتمل</span>
+                                                    </div>
+                                                    <a href="video-detail.html" class="sec-btn sm-btn"><span>متابعة
+                                                            التعلم</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Course Card 3 -->
+                                        <div class="col-md-6">
+                                            <div class="enrolled-course-card">
+                                                <div class="course-thumb">
+                                                    <img src="assets/images/top-course-3.jpg" alt="دورة إدارة المشاريع">
+                                                </div>
+                                                <div class="course-info">
+                                                    <h4 class="course-title">إدارة المشاريع الاحترافية</h4>
+                                                    <div class="course-progress">
+                                                        <div class="progress-bar-wrapper">
+                                                            <div class="progress-bar" style="width: 100%;"></div>
+                                                        </div>
+                                                        <span class="progress-text">100% مكتمل</span>
+                                                    </div>
+                                                    <a href="courses-detail.html"
+                                                        class="sec-btn sm-btn outline-btn"><span>عرض الشهادة</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Active Courses Tab Content -->
+                                <div class="courses-tab-content" id="active-courses" style="display: none;">
+                                    <!-- Empty State - shown when no active courses -->
+                                    <div class="empty-courses-state" style="display: none;">
+                                        <div class="empty-state-icon">
+                                            <i class="fa-solid fa-play-circle"></i>
+                                        </div>
+                                        <h4 class="empty-state-title">لا توجد دورات نشطة حالياً</h4>
+                                        <p class="empty-state-text">سجّل في دورة جديدة وابدأ التعلم لتظهر هنا</p>
+                                        <a href="courses-grid.html" class="sec-btn" title="استكشف الدورات"><span>استكشف
+                                                الدورات</span></a>
+                                    </div>
+                                    <!-- Courses List -->
+                                    <div class="row courses-list">
+                                        <!-- Course Card 1 -->
+                                        <div class="col-md-6">
+                                            <div class="enrolled-course-card">
+                                                <div class="course-thumb">
+                                                    <img src="assets/images/top-course-1.jpg" alt="دورة تطوير الويب">
+                                                </div>
+                                                <div class="course-info">
+                                                    <h4 class="course-title">تطوير تطبيقات الويب</h4>
+                                                    <div class="course-progress">
+                                                        <div class="progress-bar-wrapper">
+                                                            <div class="progress-bar" style="width: 65%;"></div>
+                                                        </div>
+                                                        <span class="progress-text">65% مكتمل</span>
+                                                    </div>
+                                                    <a href="video-detail.html" class="sec-btn sm-btn"><span>متابعة
+                                                            التعلم</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Course Card 2 -->
+                                        <div class="col-md-6">
+                                            <div class="enrolled-course-card">
+                                                <div class="course-thumb">
+                                                    <img src="assets/images/top-course-2.jpg" alt="دورة التسويق الرقمي">
+                                                </div>
+                                                <div class="course-info">
+                                                    <h4 class="course-title">التسويق الرقمي المتقدم</h4>
+                                                    <div class="course-progress">
+                                                        <div class="progress-bar-wrapper">
+                                                            <div class="progress-bar" style="width: 30%;"></div>
+                                                        </div>
+                                                        <span class="progress-text">30% مكتمل</span>
+                                                    </div>
+                                                    <a href="video-detail.html" class="sec-btn sm-btn"><span>متابعة
+                                                            التعلم</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Completed Courses Tab Content -->
+                                <div class="courses-tab-content" id="completed-courses" style="display: none;">
+                                    <!-- Empty State - shown when no completed courses -->
+                                    <div class="empty-courses-state" style="display: none;">
+                                        <div class="empty-state-icon">
+                                            <i class="fa-solid fa-trophy"></i>
+                                        </div>
+                                        <h4 class="empty-state-title">لم تكمل أي دورة بعد</h4>
+                                        <p class="empty-state-text">أكمل دوراتك النشطة للحصول على الشهادات وتظهر هنا</p>
+                                        <a href="courses-grid.html" class="sec-btn" title="ابدأ التعلم"><span>ابدأ
+                                                التعلم</span></a>
+                                    </div>
+                                    <!-- Courses List -->
+                                    <div class="row courses-list">
+                                        <!-- Course Card 1 -->
+                                        <div class="col-md-6">
+                                            <div class="enrolled-course-card completed">
+                                                <div class="course-thumb">
+                                                    <img src="assets/images/top-course-3.jpg" alt="دورة إدارة المشاريع">
+                                                    <div class="completed-badge">
+                                                        <i class="fa-solid fa-check-circle"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="course-info">
+                                                    <h4 class="course-title">إدارة المشاريع الاحترافية</h4>
+                                                    <div class="course-progress">
+                                                        <div class="progress-bar-wrapper">
+                                                            <div class="progress-bar" style="width: 100%;"></div>
+                                                        </div>
+                                                        <span class="progress-text">100% مكتمل</span>
+                                                    </div>
+                                                    <a href="courses-detail.html"
+                                                        class="sec-btn sm-btn outline-btn"><span>عرض الشهادة</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Change Password Tab -->
+                        <div class="profile-content-box profile-tab-content" id="change-password">
+                            <div class="profile-content-header">
+                                <h2 class="h2-title">تغيير كلمة المرور</h2>
+                                <p>قم بتحديث كلمة المرور الخاصة بك</p>
+                            </div>
+
+                            <!-- Password Requirements Info -->
+                            <div class="password-requirements-box">
+                                <h4><i class="fa-solid fa-shield-halved"></i> متطلبات كلمة المرور:</h4>
+                                <ul class="password-rules">
+                                    <li id="rule-length"><span class="rule-icon"><i
+                                                class="fa-solid fa-circle"></i></span> 8 أحرف على الأقل</li>
+                                    <li id="rule-uppercase"><span class="rule-icon"><i
+                                                class="fa-solid fa-circle"></i></span> حرف كبير واحد على الأقل (A-Z)
+                                    </li>
+                                    <li id="rule-lowercase"><span class="rule-icon"><i
+                                                class="fa-solid fa-circle"></i></span> حرف صغير واحد على الأقل (a-z)
+                                    </li>
+                                    <li id="rule-number"><span class="rule-icon"><i
+                                                class="fa-solid fa-circle"></i></span> رقم واحد على الأقل (0-9)</li>
+                                    <li id="rule-special"><span class="rule-icon"><i
+                                                class="fa-solid fa-circle"></i></span> رمز خاص واحد على الأقل (!@#$%^&*)
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <form class="profile-form password-form" id="changePasswordForm" novalidate>
+                                <div class="form-input-wp" id="currentPassWrapper">
+                                    <label for="currentPassword">كلمة المرور الحالية <span
+                                            class="required-star">*</span></label>
+                                    <div class="password-input-wrapper">
+                                        <input type="password" class="form-input" id="currentPassword"
+                                            name="currentPassword" placeholder="أدخل كلمة المرور الحالية" required>
+                                        <button type="button" class="toggle-password" data-target="currentPassword"
+                                            title="إظهار/إخفاء">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <span class="error-message" id="currentPassError"></span>
+                                </div>
+                                <div class="form-input-wp" id="newPassWrapper">
+                                    <label for="newPassword">كلمة مرور جديدة <span
+                                            class="required-star">*</span></label>
+                                    <div class="password-input-wrapper">
+                                        <input type="password" class="form-input" id="newPassword" name="newPassword"
+                                            placeholder="أدخل كلمة المرور الجديدة" required>
+                                        <button type="button" class="toggle-password" data-target="newPassword"
+                                            title="إظهار/إخفاء">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <span class="error-message" id="newPassError"></span>
+                                </div>
+                                <div class="form-input-wp" id="confirmPassWrapper">
+                                    <label for="confirmNewPassword">تأكيد كلمة المرور <span
+                                            class="required-star">*</span></label>
+                                    <div class="password-input-wrapper">
+                                        <input type="password" class="form-input" id="confirmNewPassword"
+                                            name="confirmNewPassword" placeholder="أعد إدخال كلمة المرور الجديدة"
+                                            required>
+                                        <button type="button" class="toggle-password" data-target="confirmNewPassword"
+                                            title="إظهار/إخفاء">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <span class="error-message" id="confirmPassError"></span>
+                                </div>
+                                <div class="form-input-wp mb-0">
+                                    <button type="submit" class="sec-btn" id="changePassBtn" disabled><span>تحديث كلمة
+                                            المرور</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- End Profile Content Wrapper -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Profile Section End -->
+
+    <!-- Apply Now Start -->
+    <section class="apply-now-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="apply-now-box">
+                        <div class="apply-now-shape animate-this">
+                            <img src="assets/images/newsletter-bg-shape.svg" width="838" height="488"
+                                alt="شكل خلفية التقديم الآن">
+                        </div>
+                        <div class="apply-now-content">
+                            <div class="apply-now-image-box">
+                                <img src="assets/images/apply-now-image.png" width="305" height="287"
+                                    alt="صورة التقديم الآن">
+                            </div>
+                            <div class="apply-now-text">
+                                <div class="sec-title">
+                                    <span class="sub-title">قدم الآن</span>
+                                    <h3 class="h3-title">احصل على شهادة مهاراتك الأفضل الآن!</h3>
+                                </div>
+                                <div class="apply-now-btn">
+                                    <a href="contact-us.html" class="sec-btn" title="ابدأ الآن"><span>ابدأ
+                                            الآن</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Apply Now End -->
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <div class="top-footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <a href="index.html" title="خمسه بلاننينج">
+                                    <img src="assets/images/logo/logo-light.png" class="footer-logo-img" width="125"
+                                        height="80" alt="خمسه بلاننينج">
+                                </a>
+                            </div>
+                            <div class="footer-logo-about-text">
+                                <p>منصة تعليمية متكاملة تقدم أفضل الدورات التدريبية في مختلف المجالات مع مدربين متخصصين.
+                                </p>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="underline-title">تابعنا</h3>
+                                <div class="footer-social-icons">
+                                    <a href="https://www.facebook.com/" title="تابعنا على فيسبوك" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="https://www.instagram.com/" title="تابعنا على انستجرام" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.linkedin.com/" title="تابعنا على لينكد إن" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="our-link-box">
+                            <div class="our-link-content">
+                                <h3 class="underline-title">روابط سريعة</h3>
+                                <ul>
+                                    <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                                    <li><a href="about-us.html" title="من نحن">من نحن</a></li>
+                                    <li><a href="courses-grid.html" title="الدورات">الدورات</a></li>
+                                    <li><a href="faq.html" title="الأسئلة الشائعة">الأسئلة الشائعة</a></li>
+                                    <li><a href="blog-grid.html" title="المدونة">المدونة</a></li>
+                                    <li><a href="contact-us.html" title="تواصل معنا">تواصل معنا</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="our-link-box">
+                            <div class="our-link-content">
+                                <h3 class="underline-title">أهم التصنيفات</h3>
+                                <ul>
+                                    <li><a href="courses-list.html" title="التصميم والفنون">التصميم والفنون</a></li>
+                                    <li><a href="courses-list.html" title="علوم البيانات">علوم البيانات</a></li>
+                                    <li><a href="courses-list.html" title="إدارة الأعمال">إدارة الأعمال</a></li>
+                                    <li><a href="courses-list.html" title="التسويق الرقمي">التسويق الرقمي</a></li>
+                                    <li><a href="courses-list.html" title="تطوير الذات">تطوير الذات</a></li>
+                                    <li><a href="courses-list.html" title="المالية والمحاسبة">المالية والمحاسبة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-box">
+                            <h3 class="underline-title">تواصل معنا</h3>
+                            <ul>
+                                <li>
+                                    <span class="contact-icon">
+                                        <img src="assets/images/location-icon-2.svg" width="16" height="18"
+                                            alt="Location Icon">
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="javascript:void(0);" title="العنوان">الرياض، المملكة العربية
+                                            السعودية</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="tel:+966501234567" title="+966 50 123 4567">+966 50 123 4567</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="mailto:info@courseshub.com"
+                                            title="info@courseshub.com">info@courseshub.com</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom-box">
+                            <div class="copy-right">
+                                <p>جميع الحقوق محفوظة <img src="assets/images/logo/logo-light.webp" alt="خمسه بلاننينج"
+                                        class="footer-bottom-logo" width="50" height="32">© <span
+                                        id="copy-right-year"></span></p>
+                            </div>
+                            <div class="footer-bottom-link">
+                                <ul>
+                                    <li><a href="javascript:void(0);" title="سياسة الخصوصية">سياسة الخصوصية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back To Top Start -->
+    <div class="scroll-to-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Back To Top End -->
+
+    <!-- Jquery JS Link -->
+    <!-- Back To Top JS Link -->
+
+    <!-- Profile Name Validation -->
+    <script>
+        (function () {
+            const nameInput = document.getElementById('profileFullName');
+            const nameWrapper = document.getElementById('nameFieldWrapper');
+            const nameError = document.getElementById('nameError');
+            const submitBtn = document.getElementById('profileUpdateBtn');
+            const form = document.getElementById('profileInfoForm');
+
+            if (!nameInput || !submitBtn) return;
+
+            // Store original name to detect changes
+            const originalName = nameInput.value.trim();
+
+            // Validation messages
+            const messages = {
+                required: 'الاسم مطلوب',
+                noNumbers: 'الاسم لا يمكن أن يحتوي على أرقام',
+                noChange: 'قم بتغيير الاسم للتحديث'
+            };
+
+            // Pattern to detect numbers
+            const hasNumbers = /[0-9\u0660-\u0669]/; // Includes Arabic numerals
+
+            function showError(message) {
+                nameWrapper.classList.add('error');
+                nameWrapper.classList.remove('success');
+                nameError.textContent = message;
+                submitBtn.disabled = true;
+            }
+
+            function showSuccess() {
+                nameWrapper.classList.remove('error');
+                nameWrapper.classList.add('success');
+                nameError.textContent = '';
+                submitBtn.disabled = false;
+            }
+
+            function clearState() {
+                nameWrapper.classList.remove('error', 'success');
+                nameError.textContent = '';
+            }
+
+            function validateName() {
+                const value = nameInput.value.trim();
+
+                // Check if empty
+                if (!value) {
+                    showError(messages.required);
+                    return false;
+                }
+
+                // Check for numbers
+                if (hasNumbers.test(value)) {
+                    showError(messages.noNumbers);
+                    return false;
+                }
+
+                // Check if name changed
+                if (value === originalName) {
+                    clearState();
+                    submitBtn.disabled = true;
+                    return false;
+                }
+
+                // All valid
+                showSuccess();
+                return true;
+            }
+
+            // Validate on input
+            nameInput.addEventListener('input', function () {
+                // Prevent numbers from being typed
+                this.value = this.value.replace(/[0-9\u0660-\u0669]/g, '');
+                validateName();
+            });
+
+            // Validate on blur
+            nameInput.addEventListener('blur', validateName);
+
+            // Form submit
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (validateName()) {
+                    alert('تم تحديث الاسم بنجاح!');
+                    // Here you would typically send to server
+                }
+            });
+
+            // Initial state - button disabled
+            submitBtn.disabled = true;
+        })();
+    </script>
+
+    <!-- Change Password Validation -->
+    <script>
+        (function () {
+            const form = document.getElementById('changePasswordForm');
+            const currentPass = document.getElementById('currentPassword');
+            const newPass = document.getElementById('newPassword');
+            const confirmPass = document.getElementById('confirmNewPassword');
+            const submitBtn = document.getElementById('changePassBtn');
+
+            if (!form || !submitBtn) return;
+
+            // Wrappers
+            const currentWrapper = document.getElementById('currentPassWrapper');
+            const newWrapper = document.getElementById('newPassWrapper');
+            const confirmWrapper = document.getElementById('confirmPassWrapper');
+
+            // Error spans
+            const currentError = document.getElementById('currentPassError');
+            const newError = document.getElementById('newPassError');
+            const confirmError = document.getElementById('confirmPassError');
+
+            // Rule elements
+            const ruleLength = document.getElementById('rule-length');
+            const ruleUppercase = document.getElementById('rule-uppercase');
+            const ruleLowercase = document.getElementById('rule-lowercase');
+            const ruleNumber = document.getElementById('rule-number');
+            const ruleSpecial = document.getElementById('rule-special');
+
+            // Validation patterns
+            const patterns = {
+                length: /.{8,}/,
+                uppercase: /[A-Z]/,
+                lowercase: /[a-z]/,
+                number: /[0-9]/,
+                special: /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/
+            };
+
+            // Error messages
+            const messages = {
+                currentRequired: 'كلمة المرور الحالية مطلوبة',
+                currentIncorrect: 'كلمة المرور الحالية غير صحيحة',
+                newRequired: 'كلمة المرور الجديدة مطلوبة',
+                confirmRequired: 'تأكيد كلمة المرور مطلوب',
+                passwordWeak: 'كلمة المرور لا تستوفي المتطلبات',
+                passwordMismatch: 'كلمتا المرور غير متطابقتين',
+                sameAsOld: 'كلمة المرور الجديدة يجب أن تختلف عن الحالية'
+            };
+
+            // Toggle password visibility
+            document.querySelectorAll('.toggle-password').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+                    const input = document.getElementById(targetId);
+                    const icon = this.querySelector('i');
+
+                    if (input.type === 'password') {
+                        input.type = 'text';
+                        icon.classList.remove('fa-eye');
+                        icon.classList.add('fa-eye-slash');
+                        this.classList.add('active');
+                    } else {
+                        input.type = 'password';
+                        icon.classList.remove('fa-eye-slash');
+                        icon.classList.add('fa-eye');
+                        this.classList.remove('active');
+                    }
+                });
+            });
+
+            function setFieldState(wrapper, errorSpan, state, message = '') {
+                wrapper.classList.remove('error', 'success');
+                if (state === 'error') {
+                    wrapper.classList.add('error');
+                    errorSpan.textContent = message;
+                } else if (state === 'success') {
+                    wrapper.classList.add('success');
+                    errorSpan.textContent = '';
+                } else {
+                    errorSpan.textContent = '';
+                }
+            }
+
+            function isPasswordStrong(password) {
+                return patterns.length.test(password) &&
+                    patterns.uppercase.test(password) &&
+                    patterns.lowercase.test(password) &&
+                    patterns.number.test(password) &&
+                    patterns.special.test(password);
+            }
+
+            function validateCurrentPassword() {
+                const value = currentPass.value;
+                if (!value) {
+                    setFieldState(currentWrapper, currentError, 'error', messages.currentRequired);
+                    return false;
+                }
+                setFieldState(currentWrapper, currentError, 'success');
+                return true;
+            }
+
+            // Function to show incorrect password error (called after server validation)
+            function showCurrentPasswordIncorrect() {
+                setFieldState(currentWrapper, currentError, 'error', messages.currentIncorrect);
+                currentPass.focus();
+                submitBtn.disabled = true;
+            }
+
+            function validateNewPassword() {
+                const value = newPass.value;
+                const currentValue = currentPass.value;
+
+                if (!value) {
+                    setFieldState(newWrapper, newError, 'error', messages.newRequired);
+                    return false;
+                }
+
+                if (value === currentValue && currentValue) {
+                    setFieldState(newWrapper, newError, 'error', messages.sameAsOld);
+                    return false;
+                }
+
+                // Update visual rules
+                updatePasswordRulesVisual(value);
+
+                if (!isPasswordStrong(value)) {
+                    setFieldState(newWrapper, newError, 'error', messages.passwordWeak);
+                    return false;
+                }
+
+                setFieldState(newWrapper, newError, 'success');
+                return true;
+            }
+
+            function updatePasswordRulesVisual(password) {
+                const rules = [
+                    { el: ruleLength, pattern: patterns.length },
+                    { el: ruleUppercase, pattern: patterns.uppercase },
+                    { el: ruleLowercase, pattern: patterns.lowercase },
+                    { el: ruleNumber, pattern: patterns.number },
+                    { el: ruleSpecial, pattern: patterns.special }
+                ];
+
+                rules.forEach(rule => {
+                    if (rule.el) {
+                        const icon = rule.el.querySelector('.rule-icon i');
+                        if (rule.pattern.test(password)) {
+                            rule.el.classList.add('valid');
+                            rule.el.classList.remove('invalid');
+                            if (icon) {
+                                icon.classList.remove('fa-circle', 'fa-xmark');
+                                icon.classList.add('fa-check');
+                            }
+                        } else {
+                            rule.el.classList.remove('valid');
+                            if (password.length > 0) {
+                                rule.el.classList.add('invalid');
+                                if (icon) {
+                                    icon.classList.remove('fa-circle', 'fa-check');
+                                    icon.classList.add('fa-xmark');
+                                }
+                            } else {
+                                rule.el.classList.remove('invalid');
+                                if (icon) {
+                                    icon.classList.remove('fa-check', 'fa-xmark');
+                                    icon.classList.add('fa-circle');
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            function validateConfirmPassword() {
+                const value = confirmPass.value;
+                const newValue = newPass.value;
+
+                if (!value) {
+                    setFieldState(confirmWrapper, confirmError, 'error', messages.confirmRequired);
+                    return false;
+                }
+
+                if (value !== newValue) {
+                    setFieldState(confirmWrapper, confirmError, 'error', messages.passwordMismatch);
+                    return false;
+                }
+
+                setFieldState(confirmWrapper, confirmError, 'success');
+                return true;
+            }
+
+            function validateAll() {
+                const isCurrentValid = validateCurrentPassword();
+                const isNewValid = validateNewPassword();
+                const isConfirmValid = validateConfirmPassword();
+
+                submitBtn.disabled = !(isCurrentValid && isNewValid && isConfirmValid);
+                return isCurrentValid && isNewValid && isConfirmValid;
+            }
+
+            // Real-time validation
+            currentPass.addEventListener('input', function () {
+                // Clear incorrect password error when user starts typing again
+                if (currentError.textContent === messages.currentIncorrect) {
+                    setFieldState(currentWrapper, currentError, '', '');
+                }
+                validateCurrentPassword();
+                if (newPass.value) validateNewPassword();
+                validateAll();
+            });
+
+            newPass.addEventListener('input', function () {
+                validateNewPassword();
+                if (confirmPass.value) validateConfirmPassword();
+                validateAll();
+            });
+
+            confirmPass.addEventListener('input', function () {
+                validateConfirmPassword();
+                validateAll();
+            });
+
+            // Blur validation
+            currentPass.addEventListener('blur', validateCurrentPassword);
+            newPass.addEventListener('blur', validateNewPassword);
+            confirmPass.addEventListener('blur', validateConfirmPassword);
+
+            // Form submit
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (validateAll()) {
+                    // Simulate server validation - replace with actual API call
+                    // Example: verifyCurrentPassword(currentPass.value).then(isValid => { ... })
+
+                    // For demo: simulate incorrect password check
+                    // In production, this would be an API call to verify the current password
+                    const isCurrentPasswordCorrect = true; // Set to false to test error state
+
+                    if (!isCurrentPasswordCorrect) {
+                        // Show incorrect password error
+                        showCurrentPasswordIncorrect();
+                        return;
+                    }
+
+                    // Success - password changed
+                    alert('تم تغيير كلمة المرور بنجاح!');
+                    form.reset();
+                    // Reset states
+                    [currentWrapper, newWrapper, confirmWrapper].forEach(w => {
+                        w.classList.remove('error', 'success');
+                    });
+                    [currentError, newError, confirmError].forEach(e => {
+                        e.textContent = '';
+                    });
+                    // Reset rules
+                    document.querySelectorAll('.password-rules li').forEach(li => {
+                        li.classList.remove('valid', 'invalid');
+                        const icon = li.querySelector('.rule-icon i');
+                        if (icon) {
+                            icon.classList.remove('fa-check', 'fa-xmark');
+                            icon.classList.add('fa-circle');
+                        }
+                    });
+                    submitBtn.disabled = true;
+                }
+            });
+        })();
+    </script>
+    <!-- Bundled JS -->
+    <script src="assets/js/bundles/profile.bundle.js"></script>
+    <!-- Page Logic (editable) -->
+    <script src="assets/js/pages/profile.js"></script>
+
+</body>
+
+</html>

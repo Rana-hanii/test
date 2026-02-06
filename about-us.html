@@ -1,0 +1,1144 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<!-- Mirrored from html.geekcodelab.com/courseshub/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jan 2026 11:32:24 GMT -->
+
+<head>
+    <title>من نحن - خمسه بلاننينج</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="خمسه بلاننينج, دورات اونلاين, تعليم">
+    <meta name="description" content="خمسه بلاننينج - منصة الدورات التدريبية والتعليم الإلكتروني">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FavIcon Link -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+    <!-- Google Fonts - Tajawal (Non-render-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+    </noscript>
+    <!-- Critical: loader + body.fixed (inline so loader appears first and styled before main CSS) -->
+    <style>
+        body.fixed {
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .loader-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #f3f6fa;
+            z-index: 999;
+        }
+
+        .loader-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .loading-container,
+        .loading {
+            width: 140px;
+            height: 140px;
+            border-radius: 100%;
+            position: relative;
+        }
+
+        .loading {
+            border: 1px solid transparent;
+            border-color: transparent #ffbd59 transparent #ffbd59;
+            animation: rotate-loading 1.5s linear infinite;
+            transform-origin: 50% 50%;
+        }
+
+        .loading-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(-90deg, #ffbd59 0%, #ffd28c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+        }
+
+        @keyframes rotate-loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Prevent CLS with aspect-ratio */
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+        }
+
+        img[width][height] {
+            aspect-ratio: attr(width) / attr(height);
+            height: auto;
+        }
+    </style>
+    <!-- Main Style CSS Link -->
+    <link rel="preload" href="assets/css/bundles/about.bundle.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bundles/about.bundle.css">
+    </noscript>
+    <!-- Main Style CSS Link -->
+
+    <noscript>
+
+    </noscript>
+</head>
+
+<body class="fixed">
+    <!-- Loader Start -->
+    <div class="loader-box">
+        <div class="loader-content">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div class="loading-icon">
+                    <img class="main-load" src="assets/images/loader-image.svg" width="56" height="50"
+                        alt="Loader image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="top-header-content-box">
+                            <p>اشترك اليوم وطور مهاراتك مع دورات خمسة بلاننج المُصممة للتطبيق العملي</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-2">
+                        <div class="site-branding">
+                            <a href="index.html" title="خمسه بلاننينج">
+                                <img src="assets/images/logo.webp" alt="كورسيز هب" width="120" height="77"
+                                    fetchpriority="high">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-9 col-lg-10">
+                        <div class="header-menu">
+                            <nav class="main-navigation">
+                                <button class="toggle-button" aria-label="القائمة" aria-expanded="false">
+                                    <span></span>
+                                </button>
+                                <div class="mobile-menu-box">
+                                    <div class="search-input for-mobile">
+                                        <div class="search-input-box">
+                                            <form>
+                                                <input type="text" name="search" class="form-input search-query-input" id="mobileSearchInput" placeholder="ابحث هنا..." autocomplete="off">
+                                                <button type="submit" class="sec-btn">
+                                                    <span><img src="assets/images/search-icon.svg" width="18"
+                                                            height="18" alt="أيقونة البحث" loading="lazy"></span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="header-menu-container">
+                                        <ul>
+                                            <!-- الرئيسية -->
+                                            <li>
+                                                <a href="index.html" title="الرئيسية">الرئيسية</a>
+                                            </li>
+                                            <!-- من نحن -->
+                                            <li class="active">
+                                                <a href="about-us.html" title="من نحن">من نحن</a>
+                                            </li>
+                                            <!-- الدورات -->
+                                            <li class="sub-items">
+                                                <a href="javascript:void(0);" title="الدورات">الدورات</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="courses-grid.html" title="شبكة الدورات">شبكة
+                                                            الدورات</a></li>
+                                                    <li><a href="courses-detail.html" title="تفاصيل الدورة">تفاصيل
+                                                            الدورة</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- المدونة -->
+                                            <li>
+                                                <a href="blog-grid.html" title="المدونة">المدونة</a>
+                                            </li>
+                                            <!-- تواصل معنا -->
+                                            <li>
+                                                <a href="contact-us.html" title="تواصل معنا">تواصل معنا</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Search Icon -->
+                                <div class="header-icon-wp">
+                                    <div class="search-wp">
+                                        <div class="search-icon-box">
+                                            <a href="javascript:void(0);" class="search-icon">
+                                                <img src="assets/images/search-icon.svg" width="20" height="20"
+                                                    alt="أيقونة البحث" loading="lazy">
+                                            </a>
+                                        </div>
+                                        <div class="search-input">
+                                            <div class="search-input-box">
+                                                <form
+                                                    style="display: flex; justify-content: space-between; width: 400px; gap: 10px; margin-top: 40px; margin-inline: auto;">
+                                                    <input type="text" name="search" class="form-input search-query-input" id="desktopSearchInput" placeholder="ابحث هنا..." autocomplete="off">
+                                                    <button type="submit" class="sec-btn">
+                                                        <span><img src="assets/images/search-icon.svg" width="18"
+                                                                height="18" alt="أيقونة البحث" loading="lazy"></span>
+                                                    </button>
+                                                </form>
+                                                <!-- Search Results Dropdown -->
+                                                <div class="search-results-dropdown" id="desktopSearchDropdown">
+                                                    <div class="search-results-list">
+                                                        <!-- Results will be populated by JavaScript -->
+                                                    </div>
+                                                    <div class="search-no-results" style="display: none;">
+                                                        <i class="fa-solid fa-search"></i>
+                                                        <p>لا توجد نتائج للبحث</p>
+                                                    </div>
+                                                    <div class="search-loading" style="display: none;">
+                                                        <i class="fa-solid fa-spinner fa-spin"></i>
+                                                        <p>جاري البحث...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- Login | Register Button -->
+
+                                <!-- <div class="header-btn header-auth-links sec-btn" style="display: none;">
+                                    <a href="login.html" class="header-auth-link" title="تسجيل الدخول"><span>تسجيل
+                                            الدخول</span></a>
+                                    <span class="header-auth-sep" aria-hidden="true">|</span>
+                                    <a href="register.html" class="header-auth-link" title="إنشاء حساب"><span>إنشاء
+                                            حساب</span></a>
+                                </div> -->
+                                <div class="header-btn header-auth-links sec-btn">
+                                    <a href="profile.html" class="header-profile-link" title="حسابي">
+                                        <i class="fas fa-user"></i>
+                                        <span>رنا مدكور</span>
+                                    </a>
+                                </div>
+                            </nav>
+                            <div class="black-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="inner-banner">
+        <div class="main-banner-bg-shape">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-content text-center">
+                        <h1 class="h1-title">من نحن</h1>
+                        <div class="banner-breadcrum">
+                            <ul>
+                                <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                                <li><i class="fa-solid fa-angle-right"></i></li>
+                                <li>من نحن</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- About Us Start -->
+    <section class="about-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-image-content wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="about-image-box-wp">
+                            <div class="about-image-box-bg">
+                                <div class="about-image-bg-shape"></div>
+                            </div>
+                            <div class="about-image">
+                                <img src="assets/images/about-us/about-us-image.webp" width="444" height="557"
+                                    alt="About Us Image" loading="lazy">
+                            </div>
+                            <div class="about-image-icon-wp">
+                            </div>
+                        </div>
+                        <div class="students-endroll-box move-element-animation-2">
+
+                            <div class="students-endroll-image">
+                                <img src="assets/images/logo.webp" class="logo" width="217" height="80" alt="الشعار">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-content wow right-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="sec-title">
+                            <span class="sub-title">من نحن</span>
+                            <h2 class="h2-title">أفضل طريقة للتعلم في وقت أقل</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>نحن نقدم تجربة تعليمية متميزة تجمع بين الجودة والكفاءة. نسعى لتوفير أفضل المحتويات
+                                التعليمية من خلال مدربين خبراء ومناهج حديثة تساعدك على تحقيق أهدافك التعليمية والمهنية
+                                بأسرع وقت ممكن.</p>
+                        </div>
+                        <div class="about-feature-info">
+                            <div class="about-feature-box">
+                                <div class="about-feature-icon">
+                                    <img src="assets/images/learn-icon.svg" width="25" height="25" alt="أيقونة التعلم"
+                                        loading="lazy">
+                                </div>
+                                <div class="about-feature-text">
+                                    <h4 class="h4-title">مهمتنا</h4>
+                                    <p>احصل على تعليم متميز.</p>
+                                </div>
+                            </div>
+                            <div class="about-feature-box">
+                                <div class="about-feature-icon">
+                                    <img src="assets/images/users-icon.svg" width="29" height="20" alt="أيقونة المدربين"
+                                        loading="lazy">
+                                </div>
+                                <div class="about-feature-text">
+                                    <h4 class="h4-title">رؤيتنا</h4>
+                                    <p>احصل على تعليم متميز.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-5 mb-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="about-counter-row wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s"
+                        id="about_counter">
+                        <div class="about-counter-box-wp">
+                            <div class="about-counter-box">
+                                <h3 class="h3-title">+<span class="counting" data-count="6548">0</span></h3>
+                                <div class="about-counter-text">
+                                    <p>طالب مسجل</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-counter-box-wp">
+                            <div class="about-counter-box">
+                                <h3 class="h3-title">+<span class="counting" data-count="9874">0</span></h3>
+                                <div class="about-counter-text">
+                                    <p>دورة مكتملة</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-counter-box-wp">
+                            <div class="about-counter-box">
+                                <h3 class="h3-title">+<span class="counting" data-count="8745">0</span></h3>
+                                <div class="about-counter-text">
+                                    <p>متعلم نشط</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-counter-box-wp">
+                            <div class="about-counter-box">
+                                <h3 class="h3-title">+<span class="counting" data-count="7841">0</span></h3>
+                                <div class="about-counter-text">
+                                    <p>طالب حول العالم</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-content wow right-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="sec-title">
+                            <span class="sub-title">من نحن</span>
+                            <h2 class="h2-title">أفضل طريقة للتعلم في وقت أقل</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>نحن نقدم تجربة تعليمية متميزة تجمع بين الجودة والكفاءة. نسعى لتوفير أفضل المحتويات
+                                التعليمية من خلال مدربين خبراء ومناهج حديثة تساعدك على تحقيق أهدافك التعليمية
+                                والمهنية بأسرع وقت ممكن.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image-content wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="about-image-box-wp">
+                            <div class="about-image-box-bg navy" style="background: #0b1320 !important;">
+                                <div class="about-image-bg-shape"></div>
+                            </div>
+                            <div class="about-image">
+                                <img src="assets/images/about-us/about-us-image.webp" width="444" height="557"
+                                    alt="About Us Image" loading="lazy">
+                            </div>
+                            <div class="about-image-icon-wp">
+                                <div class="about-image-icon top-icon">
+                                    <img src="assets/images/ribbon-tag-1-icon.png" width="56" height="56"
+                                        alt="About Image Icon" loading="lazy">
+                                </div>
+                                <div class="about-image-icon bottom-icon">
+                                    <img src="assets/images/academic-cap-1.png" width="56" height="56"
+                                        alt="About Image Icon" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- About Us End -->
+
+    <!-- Our Features Start -->
+    <section class="our-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="our-features-content wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="sec-title">
+                            <span class="sub-title">لماذا خمسة بلاننج؟</span>
+                            <h2 class="h2-title">نطور مهاراتك ونساعدك على النجاح</h2>
+                        </div>
+                        <div class="our-features-info">
+                            <div class="our-features-info-box">
+                                <div class="our-features-icon">
+                                    <img src="assets/images/our-features-icon-1.svg" width="40" height="39"
+                                        alt="أيقونة المميزات" loading="lazy">
+                                </div>
+                                <div class="our-features-info-text">
+                                    <h4 class="h4-title">محتوى عملي وواقعي</h4>
+                                    <p>الدورات مصممة لتطبيق مباشر على المشاريع الهندسية الحقيقية.</p>
+                                </div>
+                            </div>
+                            <div class="our-features-info-box">
+                                <div class="our-features-icon">
+                                    <img src="assets/images/our-features-icon-2.svg" width="40" height="39"
+                                        alt="أيقونة المميزات" loading="lazy">
+                                </div>
+                                <div class="our-features-info-text">
+                                    <h4 class="h4-title">خبرة المدرب</h4>
+                                    <p>يقود التدريب المهندس أحمد حشمت، الحاصل على شهادات PMP وRMP وACP، بخبرة عملية
+                                        واسعة في إدارة المشاريع.</p>
+                                </div>
+                            </div>
+                            <div class="our-features-info-box">
+                                <div class="our-features-icon">
+                                    <img src="assets/images/our-features-icon-3.svg" width="40" height="36"
+                                        alt="أيقونة المميزات" loading="lazy">
+                                </div>
+                                <div class="our-features-info-text">
+                                    <h4 class="h4-title">تأهيل لسوق العمل</h4>
+                                    <p>البرامج التدريبية تركز على بناء مهارات قابلة للتطبيق، لتعزيز فرصك المهنية في
+                                        السوق الهندسي.</p>
+                                </div>
+                            </div>
+                            <div class="our-features-info-box">
+                                <div class="our-features-icon">
+                                    <img src="assets/images/our-features-icon-4.svg" width="40" height="31"
+                                        alt="أيقونة المميزات" loading="lazy">
+                                </div>
+                                <div class="our-features-info-text">
+                                    <h4 class="h4-title">تجربة تعليمية ممتعة</h4>
+                                    <p>التدريب مُقدم بطريقة تفاعلية، تجمع بين أحدث المعلومات والمواد الميسرة لضمان فهم
+                                        سريع وفعّال.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="our-features-image-wp wow right-animation" data-wow-duration="0.8s"
+                        data-wow-delay="0.2s">
+                        <div class="our-features-image">
+                            <img src="assets/images/about-us/our-features-image.webp" width="510" height="693"
+                                alt="About Us Image" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Features End -->
+
+    <!-- Testimonial Start -->
+    <!-- <section class="testimonial-sec sec-space-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sec-title text-center">
+                        <span class="sub-title">Testimonial</span>
+                        <h2 class="h2-title">See What Our Client Says</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-slider-wp wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+            <div class="container-fluid">
+                <div class="swiper testimonial-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-1.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Henry Lucas</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-2.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Samuel John</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-3.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Jack Benjamin</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-4.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Saman Willow</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-5.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Samuel John</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper testimonial-slider-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-5.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Samuel John</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-6.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Henry Lucas</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-7.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Saman Willow</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-8.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Jack Benjamin</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box">
+                                <span class="quote-icon"><img width="33" height="24" src="assets/images/quote-icon.svg"
+                                        alt="Quote" loading="lazy"></span>
+                                <div class="client-image-title-wp">
+                                    <div class="client-image">
+                                        <img src="assets/images/client-image-1.jpg" width="80" height="80"
+                                            alt="Testimonial Image" loading="lazy">
+                                    </div>
+                                    <div class="client-info">
+                                        <h4 class="h4-title">Henry Lucas</h4>
+                                        <span class="client-profession">Our Student</span>
+                                        <div class="star-group">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="client-review-text">
+                                    <p>“Sed blandi posuer nunc in hendrerit. Pellentesque placerat enim nec velit mattis
+                                        finibus. Donec gravida ligula sit amet est gravida”.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Testimonial End -->
+
+    <!-- Our Blog Start -->
+    <!-- <section class="our-blog-sec sec-space-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sec-title text-center">
+                        <span class="sub-title">Our Blog</span>
+                        <h2 class="h2-title">Latest Blog & News</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row our-blog-row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="common-post-card blog-card wow fadeup-animation" data-wow-duration="0.8s"
+                        data-wow-delay="0.2s">
+                        <div class="post-image-box-wp">
+                            <div class="post-image">
+                                <img src="assets/images/blog-image-1.jpg" width="356" height="266" alt="Blog Image" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="common-post-content">
+                            <div class="post-lessons-info">
+                                <ul>
+                                    <li>
+                                        <span class="post-info-icon">
+                                            <img src="assets/images/date-icon.svg" width="20" height="17"
+                                                alt="Book Icon" loading="lazy">
+                                        </span>
+                                        <span class="post-info-text">7 June, 2024</span>
+                                    </li>
+                                    <li>
+                                        <span class="post-info-icon">
+                                            <img src="assets/images/admin-icon.svg" width="20" height="20"
+                                                alt="Clock Icon" loading="lazy">
+                                        </span>
+                                        <span class="post-info-text">By Admin</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-content-title">
+                                <a href="blog-detail.html" title="Announcing the winners the 2023 Education com">
+                                    <h4 class="h4-title">Announcing the winners the 2023 Education com</h4>
+                                </a>
+                            </div>
+                            <div class="post-content-description-text">
+                                <p>Nullam semper quam non est venenatis, ac porta quam porttitor. In ante metus,
+                                    imperdiet eget finibus sed, eleifend sollicitudin quam.</p>
+                            </div>
+                            <div class="post-content-btn">
+                                <a href="blog-detail.html" class="read-more-btn" title="Read More"><span>Read
+                                        More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="common-post-card blog-card wow fadedown-animation" data-wow-duration="0.8s"
+                        data-wow-delay="0.3s">
+                        <div class="post-image-box-wp">
+                            <div class="post-image">
+                                <img src="assets/images/blog-image-2.jpg" width="356" height="266" alt="Blog Image" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="common-post-content">
+                            <div class="post-lessons-info">
+                                <ul>
+                                    <li>
+                                        <span class="post-info-icon">
+                                            <img src="assets/images/date-icon.svg" width="20" height="17"
+                                                alt="Book Icon" loading="lazy">
+                                        </span>
+                                        <span class="post-info-text">7 June, 2024</span>
+                                    </li>
+                                    <li>
+                                        <span class="post-info-icon">
+                                            <img src="assets/images/admin-icon.svg" width="20" height="20"
+                                                alt="Clock Icon" loading="lazy">
+                                        </span>
+                                        <span class="post-info-text">By Admin</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-content-title">
+                                <a href="blog-detail.html" title="It is a long established fact that a reader will be">
+                                    <h4 class="h4-title">It is a long established fact that a reader will be</h4>
+                                </a>
+                            </div>
+                            <div class="post-content-description-text">
+                                <p>Nullam semper quam non est venenatis, ac porta quam porttitor. In ante metus,
+                                    imperdiet eget finibus sed, eleifend sollicitudin quam.</p>
+                            </div>
+                            <div class="post-content-btn">
+                                <a href="blog-detail.html" class="read-more-btn" title="Read More"><span>Read
+                                        More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="common-post-card blog-card wow fadeup-animation" data-wow-duration="0.8s"
+                        data-wow-delay="0.4s">
+                        <div class="post-image-box-wp">
+                            <div class="post-image">
+                                <img src="assets/images/blog-image-3.jpg" width="356" height="266" alt="Blog Image" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="common-post-content">
+                            <div class="post-lessons-info">
+                                <ul>
+                                    <li>
+                                        <span class="post-info-icon">
+                                            <img src="assets/images/date-icon.svg" width="20" height="17"
+                                                alt="Book Icon" loading="lazy">
+                                        </span>
+                                        <span class="post-info-text">7 June, 2024</span>
+                                    </li>
+                                    <li>
+                                        <span class="post-info-icon">
+                                            <img src="assets/images/admin-icon.svg" width="20" height="20"
+                                                alt="Clock Icon" loading="lazy">
+                                        </span>
+                                        <span class="post-info-text">By Admin</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-content-title">
+                                <a href="blog-detail.html" title="Azure AI Fundamentals: How to Pass the AI-900">
+                                    <h4 class="h4-title">Azure AI Fundamentals: How to Pass the AI-900</h4>
+                                </a>
+                            </div>
+                            <div class="post-content-description-text">
+                                <p>Nullam semper quam non est venenatis, ac porta quam porttitor. In ante metus,
+                                    imperdiet eget finibus sed, eleifend sollicitudin quam.</p>
+                            </div>
+                            <div class="post-content-btn">
+                                <a href="blog-detail.html" class="read-more-btn" title="Read More"><span>Read
+                                        More</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Our Blog End -->
+
+    <!-- Apply Now Start -->
+    <section class="apply-now-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="apply-now-box wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                        <div class="apply-now-shape animate-this">
+                            <img src="assets/images/newsletter-bg-shape.svg" width="838" height="488"
+                                alt="Apply Now Background Shape" loading="lazy">
+                        </div>
+                        <div class="apply-now-content">
+                            <div class="apply-now-image-box">
+                                <img src="assets/images/cta/apply-now-image.webp" width="305" height="287"
+                                    alt="Apply Now Image" loading="lazy">
+                            </div>
+                            <div class="apply-now-text">
+                                <div class="sec-title">
+                                    <span class="sub-title">ابدأ رحلتك مع خمسة بلاننج</span>
+                                    <h3 class="h3-title">اشترك في دوراتنا التدريبية اليوم!</h3>
+                                </div>
+                                <div class="apply-now-btn">
+                                    <a href="contact-us.html" class="sec-btn" title="ابدأ الآن"><span>ابدأ
+                                            الآن</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Apply Now End -->
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <div class="top-footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <a href="index.html" title="خمسه بلاننينج">
+                                    <img src="assets/images/logo-light.webp" class="footer-logo-img" width="125"
+                                        height="80" alt="خمسه بلاننينج">
+                                </a>
+                            </div>
+                            <div class="footer-logo-about-text">
+                                <p>منصة تعليمية متكاملة تقدم أفضل الدورات التدريبية في مختلف المجالات مع مدربين متخصصين.
+                                </p>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="underline-title">تابعنا</h3>
+                                <div class="footer-social-icons">
+                                    <a href="https://www.facebook.com/" title="تابعنا على فيسبوك" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="https://www.instagram.com/" title="تابعنا على انستجرام" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.linkedin.com/" title="تابعنا على لينكد إن" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="our-link-box">
+                            <div class="our-link-content">
+                                <h3 class="underline-title">روابط سريعة</h3>
+                                <ul>
+                                    <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                                    <li><a href="about-us.html" title="من نحن">من نحن</a></li>
+                                    <li><a href="courses-grid.html" title="الدورات">الدورات</a></li>
+                                    <li><a href="faq.html" title="الأسئلة الشائعة">الأسئلة الشائعة</a></li>
+                                    <li><a href="blog-grid.html" title="المدونة">المدونة</a></li>
+                                    <li><a href="contact-us.html" title="تواصل معنا">تواصل معنا</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="our-link-box">
+                            <div class="our-link-content">
+                                <h3 class="underline-title">أهم التصنيفات</h3>
+                                <ul>
+                                    <li><a href="courses-list.html" title="التصميم والفنون">التصميم والفنون</a></li>
+                                    <li><a href="courses-list.html" title="علوم البيانات">علوم البيانات</a></li>
+                                    <li><a href="courses-list.html" title="إدارة الأعمال">إدارة الأعمال</a></li>
+                                    <li><a href="courses-list.html" title="التسويق الرقمي">التسويق الرقمي</a></li>
+                                    <li><a href="courses-list.html" title="تطوير الذات">تطوير الذات</a></li>
+                                    <li><a href="courses-list.html" title="المالية والمحاسبة">المالية والمحاسبة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-box">
+                            <h3 class="underline-title">تواصل معنا</h3>
+                            <ul>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="javascript:void(0);" title="العنوان">الرياض، المملكة العربية
+                                            السعودية</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="tel:+966501234567" title="+966 50 123 4567">966501234567+</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="mailto:info@courseshub.com"
+                                            title="info@courseshub.com">info@courseshub.com</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom-box">
+                            <div class="copy-right">
+                                <p>جميع الحقوق محفوظة <img src="assets/images/tech.webp" alt="خمسه بلاننينج"
+                                        class="footer-bottom-logo" width="50" height="32">© <span
+                                        id="copy-right-year"></span></p>
+                            </div>
+                            <div class="footer-bottom-link">
+                                <ul>
+                                    <li><a href="javascript:void(0);" title="سياسة الخصوصية">سياسة الخصوصية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back To Top Start -->
+    <div class="scroll-to-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Back To Top End -->
+
+    <!-- Jquery JS Link -->
+    <!-- Bg Moving JS Link -->
+    <!-- Back To Top JS Link -->
+    <!-- Bundled JS -->
+
+    <!-- Page Logic (editable) -->
+
+    <!-- Jquery JS Link -->
+
+    <!-- Bootstrap JS Link -->
+
+    <!-- Swiper Slider JS Link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Wow Animation JS Link -->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- Custom JS Link -->
+    <script src="assets/js/bg-moving.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
+
+    <!-- Page Logic -->
+
+    <!-- Bundled JS -->
+    <script src="assets/js/bundles/about.bundle.js"></script>
+    <!-- Page Logic -->
+    <script src="assets/js/pages/about.js"></script>
+
+</body>
+
+<!-- Mirrored from html.geekcodelab.com/courseshub/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jan 2026 11:32:27 GMT -->
+
+</html>

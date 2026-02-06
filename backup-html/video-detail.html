@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>تفاصيل الدرس - خمسه بلاننينج</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="خمسه بلاننينج, دورات اونلاين, تعليم, فيديو">
+    <meta name="description" content="شاهد دروس الدورة التدريبية في خمسه بلاننينج">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FavIcon Link -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/gif" sizes="16x16">
+
+    <!-- Google Fonts - Tajawal (Non-render-blocking) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+    </noscript>
+    <!-- Critical: loader + body.fixed (inline so loader appears first and styled before main CSS) -->
+    <style>
+        body.fixed {
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .loader-box {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #f3f6fa;
+            z-index: 999;
+        }
+
+        .loader-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .loading-container,
+        .loading {
+            width: 140px;
+            height: 140px;
+            border-radius: 100%;
+            position: relative;
+        }
+
+        .loading {
+            border: 1px solid transparent;
+            border-color: transparent #ffbd59 transparent #ffbd59;
+            animation: rotate-loading 1.5s linear infinite;
+            transform-origin: 50% 50%;
+        }
+
+        .loading-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(-90deg, #ffbd59 0%, #ffd28c 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+        }
+
+        @keyframes rotate-loading {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!-- Main Style CSS Link -->
+    <link rel="preload" href="assets/css/bundles/video-detail.bundle.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/bundles/video-detail.bundle.css">
+    </noscript>
+</head>
+
+<body class="fixed">
+    <!-- Loader Start -->
+    <div class="loader-box">
+        <div class="loader-content">
+            <div class="loading-container">
+                <div class="loading"></div>
+                <div class="loading-icon">
+                    <img class="main-load" src="assets/images/loader-image.svg" width="56" height="50"
+                        alt="Loader image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="site-header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="top-header-content-box">
+                            <p>اشترك اليوم وطور مهاراتك مع دورات خمسة بلاننج المُصممة للتطبيق العملي</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-3 col-lg-2">
+                        <div class="site-branding">
+                            <a href="index.html" title="خمسه بلاننينج">
+                                <img src="assets/images/logo/logo.png" alt="كورسيز هب" width="120" height="77"
+                                    fetchpriority="high">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-9 col-lg-10">
+                        <div class="header-menu">
+                            <nav class="main-navigation">
+                                <button class="toggle-button" aria-label="القائمة" aria-expanded="false">
+                                    <span></span>
+                                </button>
+                                <div class="mobile-menu-box">
+                                    <div class="search-input for-mobile">
+                                        <div class="search-input-box">
+                                            <form>
+                                                <input type="text" name="search" class="form-input"
+                                                    placeholder="ابحث هنا..." required="">
+                                                <button type="submit" class="sec-btn">
+                                                    <span><img src="assets/images/search-icon.svg" width="18"
+                                                            height="18" alt="أيقونة البحث"></span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="header-menu-container">
+                                        <ul>
+                                            <!-- الرئيسية -->
+                                            <li>
+                                                <a href="index.html" title="الرئيسية">الرئيسية</a>
+                                            </li>
+                                            <!-- من نحن -->
+                                            <li>
+                                                <a href="about-us.html" title="من نحن">من نحن</a>
+                                            </li>
+                                            <!-- الدورات -->
+                                            <li class="sub-items active">
+                                                <a href="javascript:void(0);" title="الدورات">الدورات</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="courses-grid.html" title="شبكة الدورات">شبكة
+                                                            الدورات</a></li>
+                                                    <li><a href="courses-list.html" title="قائمة الدورات">قائمة
+                                                            الدورات</a></li>
+                                                    <li><a href="courses-detail.html" title="تفاصيل الدورة">تفاصيل
+                                                            الدورة</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- المدونة -->
+                                            <li>
+                                                <a href="blog-grid.html" title="المدونة">المدونة</a>
+                                            </li>
+                                            <!-- تواصل معنا -->
+                                            <li>
+                                                <a href="contact-us.html" title="تواصل معنا">تواصل معنا</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Search Icon -->
+                                <div class="header-icon-wp">
+                                    <div class="search-wp">
+                                        <div class="search-icon-box">
+                                            <a href="javascript:void(0);" class="search-icon">
+                                                <img src="assets/images/search-icon.svg" width="20" height="20"
+                                                    alt="أيقونة البحث">
+                                            </a>
+                                        </div>
+                                        <div class="search-input">
+                                            <div class="search-input-box">
+                                                <form>
+                                                    <input type="text" name="search" class="form-input"
+                                                        placeholder="ابحث هنا..." required="">
+                                                    <button type="submit" class="sec-btn">
+                                                        <span><img src="assets/images/search-icon.svg" width="18"
+                                                                height="18" alt="أيقونة البحث"></span>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Login | Register Button -->
+                                <div class="header-btn header-auth-links sec-btn">
+                                    <a href="login.html" class="header-auth-link" title="تسجيل الدخول"><span>تسجيل
+                                            الدخول</span></a>
+                                    <span class="header-auth-sep" aria-hidden="true">|</span>
+                                    <a href="register.html" class="header-auth-link" title="إنشاء حساب"><span>إنشاء
+                                            حساب</span></a>
+                                </div>
+                            </nav>
+                            <div class="black-shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="inner-banner">
+        <div class="main-banner-bg-shape">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-content text-center">
+                        <h1 class="h1-title">تطوير تطبيقات الويب</h1>
+                        <div class="banner-breadcrum">
+                            <ul>
+                                <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                                <li><i class="fa-solid fa-angle-right"></i></li>
+                                <li><a href="courses-grid.html" title="الدورات">الدورات</a></li>
+                                <li><i class="fa-solid fa-angle-right"></i></li>
+                                <li>المحاضرة الحالية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner End -->
+
+    <!-- Video Detail Section Start -->
+    <section class="video-detail-section">
+        <div class="container">
+            <div class="row">
+                <!-- Video Player Column -->
+                <div class="col-lg-8">
+                    <div class="video-player-wrapper">
+                        <!-- Video Player -->
+                        <div class="video-player-container">
+                            <div class="video-iframe-wrapper">
+                                <!-- Video Thumbnail/Poster with Play Button -->
+                                <div class="video-poster" id="videoPoster">
+                                    <button class="play-video-btn" id="playVideoBtn" aria-label="تشغيل الفيديو">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
+                                <!-- Google Drive Video iframe (hidden initially) -->
+                                <iframe id="videoIframe"
+                                    data-src="https://drive.google.com/file/d/YOUR_VIDEO_ID/preview" title="فيديو الدرس"
+                                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+                                    style="display: none;">
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <!-- Video Info -->
+                        <div class="video-info-box">
+                            <div class="video-title-row">
+                                <h2 class="h2-title">مقدمة في تطوير الويب - الدرس الأول</h2>
+                            </div>
+                            <div class="video-meta">
+                                <span class="video-meta-item">
+                                    <i class="fa-regular fa-clock"></i>
+                                    مدة الدرس: 45 دقيقة
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <!-- Progress Section -->
+                        <div class="video-progress-section">
+                            <div class="progress-header">
+                                <h4>تقدمك في الدورة</h4>
+                                <span class="video-progress-text">35% مكتمل</span>
+                            </div>
+                            <div class="video-progress-bar">
+                                <div class="progress-bar" style="width: 35%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Complete Lesson Button -->
+                        <div class="complete-lesson-wrapper">
+                            <button class="sec-btn complete-lesson-btn">
+                                <span><i class="fa-solid fa-check"></i> إنهاء المحاضرة</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modules Sidebar -->
+                <div class="col-lg-4">
+                    <div class="modules-sidebar">
+                        <div class="modules-header">
+                            <h3>محتوى الدورة</h3>
+                            <span class="lessons-count">12 درس</span>
+                        </div>
+
+                        <!-- Modules List -->
+                        <div class="modules-list">
+                            <!-- Module 1 -->
+                            <div class="module-item active">
+                                <div class="module-header">
+                                    <div class="module-info">
+                                        <span class="module-number">01</span>
+                                        <div class="module-details">
+                                            <h4 class="module-title">مقدمة في تطوير الويب</h4>
+                                            <span class="module-lessons-count">4 دروس</span>
+                                        </div>
+                                    </div>
+                                    <div class="module-arrow">
+                                        <i class="fa-solid fa-chevron-up"></i>
+                                    </div>
+                                </div>
+                                <div class="lessons-list">
+                                    <!-- Lesson 1 -->
+                                    <div class="lesson-item completed active">
+                                        <div class="lesson-status">
+                                            <i class="fa-solid fa-check-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">ما هو تطوير الويب؟</span>
+                                            <span class="lesson-duration">15 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 2 -->
+                                    <div class="lesson-item completed">
+                                        <div class="lesson-status">
+                                            <i class="fa-solid fa-check-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">إعداد بيئة التطوير</span>
+                                            <span class="lesson-duration">20 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 3 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">أساسيات HTML</span>
+                                            <span class="lesson-duration">30 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 4 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">تطبيق عملي</span>
+                                            <span class="lesson-duration">25 دقيقة</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 2 -->
+                            <div class="module-item">
+                                <div class="module-header">
+                                    <div class="module-info">
+                                        <span class="module-number">02</span>
+                                        <div class="module-details">
+                                            <h4 class="module-title">تعلم CSS</h4>
+                                            <span class="module-lessons-count">5 دروس</span>
+                                        </div>
+                                    </div>
+                                    <div class="module-arrow">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="lessons-list" style="display: none;">
+                                    <!-- Lesson 1 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">مقدمة في CSS</span>
+                                            <span class="lesson-duration">20 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 2 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">Flexbox و Grid</span>
+                                            <span class="lesson-duration">35 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 3 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">التصميم المتجاوب</span>
+                                            <span class="lesson-duration">30 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 4 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">الحركات والتأثيرات</span>
+                                            <span class="lesson-duration">25 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 5 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">مشروع تطبيقي</span>
+                                            <span class="lesson-duration">45 دقيقة</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Module 3 -->
+                            <div class="module-item">
+                                <div class="module-header">
+                                    <div class="module-info">
+                                        <span class="module-number">03</span>
+                                        <div class="module-details">
+                                            <h4 class="module-title">JavaScript للمبتدئين</h4>
+                                            <span class="module-lessons-count">3 دروس</span>
+                                        </div>
+                                    </div>
+                                    <div class="module-arrow">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="lessons-list" style="display: none;">
+                                    <!-- Lesson 1 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">أساسيات JavaScript</span>
+                                            <span class="lesson-duration">40 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 2 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">DOM Manipulation</span>
+                                            <span class="lesson-duration">35 دقيقة</span>
+                                        </div>
+                                    </div>
+                                    <!-- Lesson 3 -->
+                                    <div class="lesson-item">
+                                        <div class="lesson-status">
+                                            <i class="fa-regular fa-circle"></i>
+                                        </div>
+                                        <div class="lesson-info">
+                                            <span class="lesson-title">المشروع النهائي</span>
+                                            <span class="lesson-duration">60 دقيقة</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Detail Section End -->
+
+
+    <!-- Footer Start -->
+    <footer class="site-footer">
+        <div class="top-footer">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <a href="index.html" title="خمسه بلاننينج">
+                                    <img src="assets/images/logo-light.webp" class="footer-logo-img" width="125"
+                                        height="80" alt="خمسه بلاننينج">
+                                </a>
+                            </div>
+                            <div class="footer-logo-about-text">
+                                <p>منصة تعليمية متكاملة تقدم أفضل الدورات التدريبية في مختلف المجالات مع مدربين متخصصين.
+                                </p>
+                            </div>
+                            <div class="social-info">
+                                <h3 class="underline-title">تابعنا</h3>
+                                <div class="footer-social-icons">
+                                    <a href="https://www.facebook.com/" title="تابعنا على فيسبوك" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="https://www.instagram.com/" title="تابعنا على انستجرام" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.linkedin.com/" title="تابعنا على لينكد إن" target="_blank"
+                                        rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="our-link-box">
+                            <div class="our-link-content">
+                                <h3 class="underline-title">روابط سريعة</h3>
+                                <ul>
+                                    <li><a href="index.html" title="الرئيسية">الرئيسية</a></li>
+                                    <li><a href="about-us.html" title="من نحن">من نحن</a></li>
+                                    <li><a href="courses-grid.html" title="الدورات">الدورات</a></li>
+                                    <li><a href="faq.html" title="الأسئلة الشائعة">الأسئلة الشائعة</a></li>
+                                    <li><a href="blog-grid.html" title="المدونة">المدونة</a></li>
+                                    <li><a href="contact-us.html" title="تواصل معنا">تواصل معنا</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="our-link-box">
+                            <div class="our-link-content">
+                                <h3 class="underline-title">أهم التصنيفات</h3>
+                                <ul>
+                                    <li><a href="courses-list.html" title="التصميم والفنون">التصميم والفنون</a></li>
+                                    <li><a href="courses-list.html" title="علوم البيانات">علوم البيانات</a></li>
+                                    <li><a href="courses-list.html" title="إدارة الأعمال">إدارة الأعمال</a></li>
+                                    <li><a href="courses-list.html" title="التسويق الرقمي">التسويق الرقمي</a></li>
+                                    <li><a href="courses-list.html" title="تطوير الذات">تطوير الذات</a></li>
+                                    <li><a href="courses-list.html" title="المالية والمحاسبة">المالية والمحاسبة</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-box">
+                            <h3 class="underline-title">تواصل معنا</h3>
+                            <ul>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="javascript:void(0);" title="العنوان">الرياض، المملكة العربية
+                                            السعودية</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="contact-icon">
+                                        <img src="assets/images/phone-icon.svg" width="19" height="19" alt="Phone Icon">
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="tel:+966501234567" title="+966 50 123 4567">+966 50 123 4567</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="contact-icon" aria-hidden="true">
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                    </span>
+                                    <span class="contact-text">
+                                        <a href="mailto:info@courseshub.com"
+                                            title="info@courseshub.com">info@courseshub.com</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom-box">
+                            <div class="copy-right">
+                                <p>جميع الحقوق محفوظة <img src="assets/images/logo/tech.webp" alt="خمسه بلاننينج"
+                                        class="footer-bottom-logo" width="50" height="32">© <span
+                                        id="copy-right-year"></span></p>
+                            </div>
+                            <div class="footer-bottom-link">
+                                <ul>
+                                    <li><a href="javascript:void(0);" title="سياسة الخصوصية">سياسة الخصوصية</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back To Top Start -->
+    <div class="scroll-to-top">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- Back To Top End -->
+
+    <!-- Jquery JS Link -->
+    <!-- Back To Top JS Link -->
+
+    <!-- Video Play Button Script -->
+    <script>
+        (function () {
+            const playBtn = document.getElementById('playVideoBtn');
+            const videoPoster = document.getElementById('videoPoster');
+            const videoIframe = document.getElementById('videoIframe');
+
+            if (playBtn && videoPoster && videoIframe) {
+                // Click on play button or poster to start video
+                function playVideo() {
+                    // Get the video source from data-src and set it (this starts loading)
+                    const videoSrc = videoIframe.getAttribute('data-src');
+                    if (videoSrc) {
+                        // Add autoplay parameter to the URL
+                        const autoplaySrc = videoSrc + (videoSrc.includes('?') ? '&' : '?') + 'autoplay=1';
+                        videoIframe.src = autoplaySrc;
+                    }
+
+                    // Hide poster, show iframe
+                    videoPoster.classList.add('hidden');
+                    videoIframe.style.display = 'block';
+                }
+
+                playBtn.addEventListener('click', playVideo);
+                videoPoster.addEventListener('click', playVideo);
+            }
+        })();
+    </script>
+    <!-- Bundled JS -->
+    <script src="assets/js/bundles/video-detail.bundle.js"></script>
+    <!-- Page Logic (editable) -->
+    <script src="assets/js/pages/video-detail.js"></script>
+
+</body>
+
+</html>

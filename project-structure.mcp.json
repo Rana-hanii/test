@@ -1,0 +1,492 @@
+{
+  "name": "courseshub-project-structure",
+  "version": "2.0.0",
+  "description": "Model Context Protocol file documenting the Courseshub Online Courses & Education HTML Template structure with per-page optimization for MVC backend integration. This is an Arabic-first application with RTL (Right-to-Left) layout design.",
+  "project": {
+    "name": "Courseshub",
+    "type": "Online Courses & Education Platform",
+    "framework": "Vanilla HTML5, CSS3, JavaScript",
+    "architecture": "Per-page optimized (MVC-ready) with advanced optimization layer",
+    "buildSystem": "Custom Node.js + Bash scripts",
+    "jquery": "3.7.1 (included in bundles)",
+    "ssr": false,
+    "seo": true,
+    "primaryLanguage": "Arabic (ar)",
+    "textDirection": "RTL (Right-to-Left)",
+    "locale": "ar-SA"
+  },
+  "structure": {
+    "root": "courseshub",
+    "directories": {
+      "root_scripts": {
+        "path": "./",
+        "description": "Advanced optimization scripts and one-off tools located in the root",
+        "files": [
+          "add-image-dimensions.js",
+          "add-lazy-loading.js",
+          "add-preloads.js",
+          "add-srcset.js",
+          "apply-arabic-nav.js",
+          "convert-to-webp.js",
+          "extract-inline-css.js",
+          "fix-accessibility.js",
+          "fix-arabic-content.js",
+          "fix-cls.js",
+          "fix-lcp.js",
+          "fix-tbt-issues.js",
+          "generate-responsive-images.js",
+          "optimize-loading.js",
+          "optimize-performance.js",
+          "purge-css.js",
+          "uniform-header.js",
+          "update-branding.js",
+          "update-image-refs.js"
+        ]
+      },
+      "src": {
+        "path": "src/",
+        "description": "Source files for development (editable)",
+        "subdirectories": {
+          "css": {
+            "pages": {
+              "path": "src/css/pages/",
+              "description": "Page-specific CSS files",
+              "files": [
+                "home.css",
+                "about.css",
+                "courses-grid.css",
+                "courses-list.css",
+                "courses-detail.css",
+                "event-detail.css",
+                "instructor.css",
+                "instructor-detail.css",
+                "pricing.css",
+                "faq.css",
+                "blog-grid.css",
+                "blog-list.css",
+                "blog-detail.css",
+                "contact.css",
+                "login.css",
+                "register.css",
+                "profile.css",
+                "checkout.css",
+                "video-detail.css",
+                "404.css"
+              ]
+            }
+          },
+          "js": {
+            "pages": {
+              "path": "src/js/pages/",
+              "description": "Page-specific JS files (readable, backend can modify)",
+              "files": [
+                "home.js",
+                "about.js",
+                "courses-grid.js",
+                "courses-list.js",
+                "courses-detail.js",
+                "event-detail.js",
+                "instructor.js",
+                "instructor-detail.js",
+                "pricing.js",
+                "faq.js",
+                "blog-grid.js",
+                "blog-list.js",
+                "blog-detail.js",
+                "contact.js",
+                "login.js",
+                "register.js",
+                "profile.js",
+                "checkout.js",
+                "video-detail.js",
+                "404.js"
+              ]
+            }
+          }
+        }
+      },
+      "dist": {
+        "path": "dist/",
+        "description": "Build output - optimized for production",
+        "generated": true,
+        "subdirectories": {
+          "css": {
+            "bundles": {
+              "path": "dist/assets/css/bundles/",
+              "description": "Bundled and minified CSS per page",
+              "pattern": "*.bundle.css",
+              "example": "home.bundle.css contains all CSS needed for home page"
+            }
+          },
+          "js": {
+            "bundles": {
+              "path": "dist/assets/js/bundles/",
+              "description": "Bundled and minified JS libraries per page",
+              "pattern": "*.bundle.js",
+              "example": "home.bundle.js contains jQuery, Bootstrap, Swiper, WOW, Isotope for home page"
+            },
+            "pages": {
+              "path": "dist/assets/js/pages/",
+              "description": "Readable page logic (NOT minified) - backend can modify",
+              "pattern": "*.js",
+              "example": "home.js contains page initialization and custom logic"
+            }
+          }
+        }
+      },
+      "assets": {
+        "path": "assets/",
+        "description": "Original asset files (Legacy source for common styles)",
+        "subdirectories": {
+          "css": {
+            "path": "assets/css/",
+            "files": [
+              "style.css",
+              "rtl-auth.css",
+              "bootstrap.min.css",
+              "swiper-bundle.min.css",
+              "fontawesome.min.css",
+              "animate.css",
+              "fancybox.min.css",
+              "jquery-ui.css",
+              "fonts.css"
+            ]
+          },
+          "js": {
+            "path": "assets/js/",
+            "files": [
+              "jquery-3.7.1.min.js",
+              "bootstrap.min.js",
+              "swiper-bundle.min.js",
+              "wow.min.js",
+              "isotope.pkgd.min.js",
+              "fancybox.min.js",
+              "jquery-ui.min.js",
+              "bg-moving.js",
+              "back-to-top.js",
+              "custom-scroll-count.js",
+              "custom.js"
+            ]
+          }
+        }
+      },
+      "scripts": {
+        "path": "scripts/",
+        "description": "Core build orchestration scripts",
+        "files": [
+          "generate-bundles.js",
+          "minify-dist-css.js",
+          "minify-dist-js.js",
+          "purge-css.js",
+          "sync-dist.js",
+          "update-dist-html.js",
+          "update-html-links.js"
+        ]
+      }
+    }
+  },
+  "buildSystem": {
+    "command": "npm run build",
+    "alternativeCommand": "bash build.sh",
+    "scripts": {
+      "build": "Full production build pipeline via bash script",
+      "generate-bundles": "Bundles raw CSS/JS from assets/ into dist/ per page",
+      "purge-css": "Removes unused CSS using PurgeCSS based on dist/ HTML files",
+      "sync-dist": "Synchronizes static assets to the dist folder",
+      "minify-dist": "Runs minify-dist-css and minify-dist-js to compress output",
+      "update-dist": "Updates HTML links in dist/ to point to the new bundles",
+      "dist": "The full end-to-end production build shortcut",
+      "optimize-all": "Runs the root-level optimize-performance.js script"
+    },
+    "perPageOptimization": {
+      "enabled": true,
+      "description": "Each page loads only CSS/JS it actually needs via per-page bundles",
+      "cssStrategy": "Common assets + page-specific CSS bundled and minified per page",
+      "jsStrategy": "Core libraries bundled per page + readable page logic kept separate"
+    },
+    "output": {
+      "css": "dist/assets/css/bundles/*.bundle.css (minified)",
+      "jsBundle": "dist/assets/js/bundles/*.bundle.js (minified)",
+      "jsPage": "dist/assets/js/pages/*.js (readable for backend)"
+    }
+  },
+  "advancedOptimizationLayer": {
+    "description": "Post-build fixes for Core Web Vitals and accessibility",
+    "scripts": {
+      "CLS": "fix-cls.js, add-image-dimensions.js (Fixes layout shift)",
+      "TBT": "fix-tbt-issues.js, optimize-loading.js (Reduces execution time)",
+      "LCP": "fix-lcp.js, add-preloads.js (Speeds up largest paint element)",
+      "Images": "convert-to-webp.js, add-srcset.js (Next-gen formats and responsiveness)",
+      "Branding": "apply-arabic-nav.js, uniform-header.js, update-branding.js"
+    }
+  },
+  "pages": {
+    "home": {
+      "html": "index.html",
+      "cssBundle": "dist/assets/css/bundles/home.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/home.bundle.js",
+      "jsPage": "dist/assets/js/pages/home.js",
+      "features": [
+        "swiper",
+        "wow",
+        "isotope",
+        "counter",
+        "bgMoving"
+      ],
+      "sections": [
+        "Loader",
+        "Header",
+        "Main Banner",
+        "Main Partners",
+        "Top Category List",
+        "Top Course",
+        "About Us",
+        "Our Event",
+        "Our Skills",
+        "Testimonial",
+        "Best Instructor",
+        "Newsletter",
+        "Our Pricing",
+        "Our Blog",
+        "Apply Now",
+        "Footer"
+      ]
+    },
+    "about": {
+      "html": "about-us.html",
+      "cssBundle": "dist/assets/css/bundles/about.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/about.bundle.js",
+      "jsPage": "dist/assets/js/pages/about.js",
+      "features": [
+        "swiper",
+        "wow",
+        "counter"
+      ]
+    },
+    "coursesGrid": {
+      "html": "courses-grid.html",
+      "cssBundle": "dist/assets/css/bundles/courses-grid.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/courses-grid.bundle.js",
+      "jsPage": "dist/assets/js/pages/courses-grid.js",
+      "features": [
+        "wow",
+        "isotope"
+      ]
+    },
+    "coursesList": {
+      "html": "courses-list.html",
+      "cssBundle": "dist/assets/css/bundles/courses-list.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/courses-list.bundle.js",
+      "jsPage": "dist/assets/js/pages/courses-list.js",
+      "features": [
+        "wow"
+      ]
+    },
+    "coursesDetail": {
+      "html": "courses-detail.html",
+      "cssBundle": "dist/assets/css/bundles/courses-detail.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/courses-detail.bundle.js",
+      "jsPage": "dist/assets/js/pages/courses-detail.js",
+      "features": [
+        "swiper",
+        "wow",
+        "fancybox",
+        "accordion"
+      ]
+    },
+    "eventDetail": {
+      "html": "event-detail.html",
+      "cssBundle": "dist/assets/css/bundles/event-detail.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/event-detail.bundle.js",
+      "jsPage": "dist/assets/js/pages/event-detail.js",
+      "features": [
+        "swiper",
+        "wow"
+      ]
+    },
+    "instructor": {
+      "html": "instructor.html",
+      "cssBundle": "dist/assets/css/bundles/instructor.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/instructor.bundle.js",
+      "jsPage": "dist/assets/js/pages/instructor.js",
+      "features": [
+        "wow"
+      ]
+    },
+    "instructorDetail": {
+      "html": "instructor-detail.html",
+      "cssBundle": "dist/assets/css/bundles/instructor-detail.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/instructor-detail.bundle.js",
+      "jsPage": "dist/assets/js/pages/instructor-detail.js",
+      "features": [
+        "wow"
+      ]
+    },
+    "pricing": {
+      "html": "pricing.html",
+      "cssBundle": "dist/assets/css/bundles/pricing.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/pricing.bundle.js",
+      "jsPage": "dist/assets/js/pages/pricing.js",
+      "features": [
+        "swiper",
+        "wow",
+        "priceToggle"
+      ]
+    },
+    "faq": {
+      "html": "faq.html",
+      "cssBundle": "dist/assets/css/bundles/faq.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/faq.bundle.js",
+      "jsPage": "dist/assets/js/pages/faq.js",
+      "features": [
+        "wow",
+        "accordion"
+      ]
+    },
+    "blogGrid": {
+      "html": "blog-grid.html",
+      "cssBundle": "dist/assets/css/bundles/blog-grid.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/blog-grid.bundle.js",
+      "jsPage": "dist/assets/js/pages/blog-grid.js",
+      "features": [
+        "wow"
+      ]
+    },
+    "blogList": {
+      "html": "blog-list.html",
+      "cssBundle": "dist/assets/css/bundles/blog-list.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/blog-list.bundle.js",
+      "jsPage": "dist/assets/js/pages/blog-list.js",
+      "features": [
+        "wow"
+      ]
+    },
+    "blogDetail": {
+      "html": "blog-detail.html",
+      "cssBundle": "dist/assets/css/bundles/blog-detail.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/blog-detail.bundle.js",
+      "jsPage": "dist/assets/js/pages/blog-detail.js",
+      "features": [
+        "wow",
+        "fancybox"
+      ]
+    },
+    "contact": {
+      "html": "contact-us.html",
+      "cssBundle": "dist/assets/css/bundles/contact.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/contact.bundle.js",
+      "jsPage": "dist/assets/js/pages/contact.js",
+      "features": [
+        "wow",
+        "formValidation"
+      ]
+    },
+    "login": {
+      "html": "login.html",
+      "cssBundle": "dist/assets/css/bundles/login.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/login.bundle.js",
+      "jsPage": "dist/assets/js/pages/login.js",
+      "features": [
+        "formValidation"
+      ]
+    },
+    "register": {
+      "html": "register.html",
+      "cssBundle": "dist/assets/css/bundles/register.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/register.bundle.js",
+      "jsPage": "dist/assets/js/pages/register.js",
+      "features": [
+        "formValidation"
+      ]
+    },
+    "profile": {
+      "html": "profile.html",
+      "cssBundle": "dist/assets/css/bundles/profile.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/profile.bundle.js",
+      "jsPage": "dist/assets/js/pages/profile.js",
+      "features": [
+        "tabs"
+      ]
+    },
+    "checkout": {
+      "html": "checkout.html",
+      "cssBundle": "dist/assets/css/bundles/checkout.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/checkout.bundle.js",
+      "jsPage": "dist/assets/js/pages/checkout.js",
+      "features": [
+        "formValidation"
+      ]
+    },
+    "videoDetail": {
+      "html": "video-detail.html",
+      "cssBundle": "dist/assets/css/bundles/video-detail.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/video-detail.bundle.js",
+      "jsPage": "dist/assets/js/pages/video-detail.js",
+      "features": [
+        "wow",
+        "fancybox"
+      ]
+    },
+    "notFound": {
+      "html": "404.html",
+      "cssBundle": "dist/assets/css/bundles/404.bundle.css",
+      "jsBundle": "dist/assets/js/bundles/404.bundle.js",
+      "jsPage": "dist/assets/js/pages/404.js",
+      "features": []
+    }
+  },
+  "mvcIntegration": {
+    "description": "How to integrate with MVC backend",
+    "workflow": {
+      "step1": "Run 'npm run build' to generate dist/ folder",
+      "step2": "Copy dist/assets/ to backend's wwwroot/ folder",
+      "step3": "Backend creates Views (.cshtml) based on dist/*.html structure",
+      "step4": "Backend references CSS/JS from wwwroot/"
+    },
+    "backendCanModify": {
+      "jsPages": "dist/assets/js/pages/*.js - readable, add custom API calls here",
+      "views": "Backend creates own Views, references assets from wwwroot/"
+    },
+    "backendCannotModify": {
+      "cssBundles": "dist/assets/css/bundles/*.bundle.css - minified, don't edit",
+      "jsBundles": "dist/assets/js/bundles/*.bundle.js - minified, don't edit"
+    },
+    "dynamicData": {
+      "method1": "Data attributes in HTML - JS reads from DOM",
+      "method2": "window.APP_CONFIG - Backend injects config object",
+      "method3": "API endpoints - JS fetches data from backend"
+    }
+  },
+  "designSystem": {
+    "colorPalette": {
+      "baseColors": {
+        "orange": "#ffbd59",
+        "light": "#f3f6fa",
+        "dark": "#0b1320"
+      }
+    },
+    "typography": {
+      "primaryFont": "Tajawal, Arial, sans-serif"
+    }
+  },
+  "rtlSupport": {
+    "enabled": true,
+    "language": "Arabic",
+    "direction": "rtl",
+    "htmlAttributes": "lang='ar' dir='rtl'"
+  },
+  "performance": {
+    "perPageBenefits": [
+      "Each page loads only CSS/JS it needs",
+      "Smaller initial load per page",
+      "Better caching - bundles cached per page",
+      "Faster First Contentful Paint",
+      "Better Core Web Vitals"
+    ],
+    "estimatedSavings": {
+      "loginPage": "~55% smaller than monolithic bundle",
+      "faqPage": "~50% smaller",
+      "homePage": "~10% smaller (uses most features)"
+    }
+  }
+}

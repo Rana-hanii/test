@@ -1,0 +1,52 @@
+{
+  "name": "courseshub",
+  "version": "2.0.0",
+  "description": "Courseshub - Online Courses & Education HTML Template (Per-page optimized)",
+  "main": "index.js",
+  "scripts": {
+    "build": "bash build.sh",
+    "build:watch": "node scripts/watch.js",
+    "generate-bundles": "node scripts/generate-bundles.js",
+    "update-html": "node scripts/update-html-links.js",
+    "update-dist": "node scripts/update-dist-html.js",
+    "sync-dist": "node scripts/sync-dist.js",
+    "purge-css": "node scripts/purge-css.js",
+    "minify-dist-js": "node scripts/minify-dist-js.js",
+    "minify-dist-css": "node scripts/minify-dist-css.js",
+    "dist": "node scripts/generate-bundles.js && npm run purge-css && node scripts/sync-dist.js && npm run minify-dist-css && npm run minify-dist-js && node scripts/update-dist-html.js",
+    "serve:dist": "npx --yes serve dist -l 3000",
+    "convert-images": "node scripts/convert-to-webp.js",
+    "update-refs": "node scripts/update-image-refs.js",
+    "fix-cls": "node scripts/fix-cls.js",
+    "optimize-loading": "node scripts/optimize-loading.js",
+    "extract-css": "node extract-inline-css.js",
+    "add-lazy-loading": "node add-lazy-loading.js",
+    "add-dimensions": "node add-image-dimensions.js",
+    "fix-tbt": "node fix-tbt-issues.js",
+    "optimize-all": "node optimize-performance.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rana-hanii/courses-hub.git"
+  },
+  "keywords": [
+    "education",
+    "courses",
+    "online-learning",
+    "html-template"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rana-hanii/courses-hub/issues"
+  },
+  "homepage": "https://github.com/Rana-hanii/courses-hub#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "purgecss": "^5.0.0",
+    "sharp": "^0.34.5",
+    "terser": "^5.46.0"
+  }
+}
