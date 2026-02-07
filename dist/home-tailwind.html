@@ -99,10 +99,31 @@
             height: auto;
         }
     </style>
-    <!-- Main Style CSS Link -->
-    
-    <!-- <link rel="preload" href="assets/css/bundles/home.bundle.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="assets/css/bundles/home.bundle.css"></noscript> -->
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ffbd59',
+                        secondary: '#0b1320',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Libs CSS (No Bootstrap) -->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/css/pages/home.css">
 </head>
 
 <body class="fixed">
@@ -123,9 +144,9 @@
     <!-- Header Start -->
     <header class="site-header">
         <div class="top-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap">
+                    <div class="w-full">
                         <div class="top-header-content-box">
                             <p>اشترك اليوم وطور مهاراتك مع دورات خمسة بلاننج المُصممة للتطبيق العملي</p>
                         </div>
@@ -134,16 +155,16 @@
             </div>
         </div>
         <div class="bottom-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xxl-3 col-lg-2">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full lg:w-2/12 xl:w-3/12">
                         <div class="site-branding">
                             <a href="index.html" title="خمسه بلاننينج">
                                 <img src="assets/images/logo.webp" alt="خمسه بلاننينج" width="120" height="77">
                             </a>
                         </div>
                     </div>
-                    <div class="col-xxl-9 col-lg-10">
+                    <div class="w-full lg:w-10/12 xl:w-9/12">
                         <div class="header-menu">
                             <nav class="main-navigation">
                                 <button class="toggle-button" aria-label="القائمة" aria-expanded="false">
@@ -259,15 +280,15 @@
     <!-- Header End -->
 
     <!-- Banner Start -->
-    <section class="main-banner">
+    <section class="main-banner ">
         <div class="main-banner-bg-shape">
             <div class="shape-1"></div>
             <div class="shape-2"></div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="w-full">
                     <div class="banner-content">
                         <!-- <span class="sub-title wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">أكثر من
                             26,000+ دورة تدريبية منا</span> -->
@@ -317,7 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="w-full">
                     <div class="banner-image-content wow fadeup-animation" data-wow-duration="0.8s"
                         data-wow-delay="0.4s">
 
@@ -356,18 +377,18 @@
 
     <!-- Top Category List Start -->
     <section class="top-category-list-sec sec-space">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full">
                     <div class="sec-title text-center">
                         <span class="sub-title">تصنيفات خمسة بلاننج</span>
                         <h2 class="h2-title">استكشف فئات الدورات المتاحة</h2>
                     </div>
                 </div>
             </div>
-            <div class="row top-category-list-row">
-                <div class="col-xl-6 col-md-6">
-                    <div class="category-list-box wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.3s">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="col-span-1">
+                    <div class="category-list-box" data-wow-duration="0.8s" data-wow-delay="0.3s">
                         <div class="category-list-icon">
                             <img src="assets/images/category-icon-1.svg" class="category-icon" width="50" height="55"
                                 alt="أيقونة التصنيف" loading="lazy">
@@ -381,8 +402,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-6">
-                    <div class="category-list-box wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                <div class="col-span-1">
+                    <div class="category-list-box" data-wow-duration="0.8s" data-wow-delay="0.4s">
                         <div class="category-list-icon">
                             <img src="assets/images/category-icon-2.svg" class="category-icon" width="50" height="50"
                                 alt="أيقونة التصنيف" loading="lazy">
@@ -404,20 +425,19 @@
 
     <!-- Our Event Start -->
     <section class="our-event-sec sec-space">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full">
                     <div class="our-event-content">
                         <div class="sec-title text-center">
                             <span class="sub-title">دوراتنا</span>
                             <h2 class="h2-title">اكتشف دوراتنا المميزة</h2>
                         </div>
-                        <div class="our-event-box-wp">
-                            <div class="our-event-box wow fadeup-animation" data-wow-duration="0.8s"
-                                data-wow-delay="0.2s">
+                        <div class="grid gap-8">
+                            <div class="our-event-box" data-wow-duration="0.8s" data-wow-delay="0.2s">
                                 <div class="our-event-image-text">
                                     <div class="our-event-image">
-                                        <img src="assets/images/event-image-1.webp" width="270" height="150"
+                                        <img src="assets/images/event-image-1.jpg" width="270" height="150"
                                             alt="صورة الدورة" loading="lazy">
                                     </div>
                                     <div class="our-event-text">
@@ -459,11 +479,10 @@
                                             الان</span></a>
                                 </div>
                             </div>
-                            <div class="our-event-box wow fadeup-animation" data-wow-duration="0.8s"
-                                data-wow-delay="0.3s">
+                            <div class="our-event-box" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                 <div class="our-event-image-text">
                                     <div class="our-event-image">
-                                        <img src="assets/images/event-image-2.webp" width="270" height="150"
+                                        <img src="assets/images/event-image-2.jpg" width="270" height="150"
                                             alt="صورة الدورة" loading="lazy">
                                     </div>
                                     <div class="our-event-text">
@@ -505,11 +524,10 @@
                                             الان</span></a>
                                 </div>
                             </div>
-                            <div class="our-event-box wow fadeup-animation" data-wow-duration="0.8s"
-                                data-wow-delay="0.4s">
+                            <div class="our-event-box" data-wow-duration="0.8s" data-wow-delay="0.4s">
                                 <div class="our-event-image-text">
                                     <div class="our-event-image">
-                                        <img src="assets/images/event-image-3.webp" width="270" height="150"
+                                        <img src="assets/images/event-image-3.jpg" width="270" height="150"
                                             alt="صورة الدورة" loading="lazy">
                                     </div>
                                     <div class="our-event-text">
@@ -561,10 +579,10 @@
 
     <!-- About Us Start -->
     <section class="about-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-image-content wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="about-image-content" data-wow-duration="0.8s" data-wow-delay="0.2s">
                         <div class="about-image-box-wp">
                             <div class="about-image-box-bg">
                                 <div class="about-image-bg-shape"></div>
@@ -575,11 +593,11 @@
                             </div>
                             <div class="about-image-icon-wp">
                                 <div class="about-image-icon top-icon">
-                                    <img src="assets/images/ribbon-tag-1-icon.webp" width="56" height="56"
+                                    <img src="assets/images/ribbon-tag-1-icon.png" width="56" height="56"
                                         alt="أيقونة الشهادة" loading="lazy">
                                 </div>
                                 <div class="about-image-icon bottom-icon">
-                                    <img src="assets/images/academic-cap-1.webp" width="56" height="56"
+                                    <img src="assets/images/academic-cap-1.png" width="56" height="56"
                                         alt="أيقونة التخرج" loading="lazy">
                                 </div>
                             </div>
@@ -598,8 +616,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="about-content wow right-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="about-content" data-wow-duration="0.8s" data-wow-delay="0.2s">
                         <div class="sec-title">
                             <span class="sub-title">من نحن</span>
                             <h2 class="h2-title">منصة تدريب هندسي عملي مُخصصة من أجلك</h2>
@@ -637,10 +655,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="about-counter-row wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s"
-                        id="about_counter">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full lg:w-10/12">
+                    <div class="about-counter-row" data-wow-duration="0.8s" data-wow-delay="0.2s" id="about_counter">
                         <div class="about-counter-box-wp">
                             <div class="about-counter-box">
                                 <h3 class="h3-title">+<span class="counting" data-count="1500">0</span></h3>
@@ -1371,30 +1388,20 @@
     </div>
     <!-- Back To Top End -->
 
-    <!-- Jquery JS Link -->
-    <!-- Bg Moving JS Link -->
-    <!-- Back To Top JS Link -->
-    <!-- Bundled JS -->
+    <!-- Core JS (No Bootstrap) -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
 
-    <!-- Page Logic (editable) -->
+    <!-- Libs JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
 
-    <!-- Jquery JS Link -->
+    <!-- Custom JS -->
+    <script src="assets/js/bg-moving.js"></script>
+    <script src="assets/js/back-to-top.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="src/js/search-dropdown.js"></script>
 
-    <!-- Bootstrap JS Link -->
-
-    <!-- Swiper Slider JS Link -->
-    <!-- Wow Animation JS Link -->
-    <!-- Isotope JS Link -->
-
-    <!-- Custom JS Link -->
-
-    <!-- Page Logic -->
-
-    <!-- Bundled JS -->
-    
-    <!-- Page Logic -->
-    <!-- Bundled JS -->
-    <script src="assets/js/bundles/home.bundle.js"></script>
     <!-- Page Logic -->
     <script src="assets/js/pages/home.js"></script>
 

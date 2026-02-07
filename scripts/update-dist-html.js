@@ -10,6 +10,7 @@ const DIST_DIR = path.join(__dirname, '../dist');
 // Page mapping: html filename -> bundle name
 const PAGE_MAP = {
     'index.html': 'home',
+    'home-tailwind.html': 'home-tailwind',
     'about-us.html': 'about',
     'courses-grid.html': 'courses-grid',
     'courses-list.html': 'courses-list',
@@ -65,30 +66,30 @@ const OLD_JS_PATTERNS = [
 
 function updateHtmlFile(htmlFile, bundleName) {
     const filePath = path.join(DIST_DIR, htmlFile);
-    
+
     if (!fs.existsSync(filePath)) {
         console.log(`  ⚠️  ${htmlFile} not found, skipping`);
         return false;
     }
-    
+
     let content = fs.readFileSync(filePath, 'utf8');
-    
+
     // Remove old CSS links
     OLD_CSS_PATTERNS.forEach(pattern => {
         content = content.replace(pattern, '');
     });
-    
+
     // Remove old JS scripts
     OLD_JS_PATTERNS.forEach(pattern => {
         content = content.replace(pattern, '');
     });
-    
+
     // Remove existing bundle CSS (blocking, preload, or noscript) so we can add async pattern
     content = content.replace(/<link[^>]*href="assets\/css\/bundles\/[^"]*"[^>]*>/g, '');
     content = content.replace(/<noscript><link[^>]*href="assets\/css\/bundles\/[^"]*"[^>]*><\/noscript>\s*/g, '');
     content = content.replace(/<script[^>]*src="assets\/js\/bundles\/[^"]*"[^>]*><\/script>/g, '');
     content = content.replace(/<script[^>]*src="assets\/js\/pages\/[^"]*"[^>]*><\/script>/g, '');
-    
+
     // Critical inline CSS (loader + body.fixed) so loader appears first and styled before main CSS
     const criticalCSS = `    <!-- Critical: loader + body.fixed (inline so loader appears first and styled before main CSS) -->
     <style>
@@ -123,7 +124,7 @@ body.fixed{position:fixed;top:0;height:100vh;overflow:hidden;}
             `${cssAsyncBlock}</head>`
         );
     }
-    
+
     // Add new JS before </body> if not already present
     const newJsLinks = `
     <!-- Bundled JS -->
@@ -131,17 +132,17 @@ body.fixed{position:fixed;top:0;height:100vh;overflow:hidden;}
     <!-- Page Logic -->
     <script src="assets/js/pages/${bundleName}.js"></script>
 `;
-    
+
     if (!content.includes(`${bundleName}.bundle.js`)) {
         content = content.replace(
             /(\s*)<\/body>/,
             `${newJsLinks}$1</body>`
         );
     }
-    
+
     // Clean up multiple empty lines
     content = content.replace(/\n\s*\n\s*\n\s*\n/g, '\n\n');
-    
+
     // Write updated content
     fs.writeFileSync(filePath, content);
     return true;

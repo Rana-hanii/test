@@ -11,6 +11,7 @@ const ROOT = path.join(__dirname, '..');
 
 const PAGE_HTML = {
     'home': 'index.html',
+    'home-tailwind': 'home-tailwind.html',
     'about': 'about-us.html',
     'courses-grid': 'courses-grid.html',
     'courses-list': 'courses-list.html',

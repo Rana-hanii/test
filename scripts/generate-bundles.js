@@ -11,6 +11,7 @@ const ROOT = path.join(__dirname, '..');
 // Page configurations
 const PAGES = {
     'home': { features: ['swiper', 'wow', 'isotope'] },
+    'home-tailwind': { features: ['swiper', 'wow', 'isotope'] },
     'about': { features: ['swiper', 'wow'] },
     'courses-grid': { features: ['wow', 'isotope'] },
     'courses-list': { features: ['wow'] },

@@ -14,6 +14,7 @@ echo "🚀 Starting build process..."
 # Page to HTML file mapping
 declare -A PAGE_HTML=(
     ["home"]="index.html"
+    ["home-tailwind"]="home-tailwind.html"
     ["about"]="about-us.html"
     ["courses-grid"]="courses-grid.html"
     ["courses-list"]="courses-list.html"
@@ -143,6 +144,7 @@ CUSTOM_JS_FILES=(
 # Page-specific JS requirements
 declare -A PAGE_FEATURES=(
     ["home"]="swiper wow isotope custom"
+    ["home-tailwind"]="swiper wow isotope custom"
     ["about"]="swiper wow custom"
     ["courses-grid"]="wow isotope custom"
     ["courses-list"]="wow custom"
