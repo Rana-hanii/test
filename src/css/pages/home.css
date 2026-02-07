@@ -2051,13 +2051,13 @@ textarea.form-input {
 .students-endroll-box {
     position: absolute;
     top: 168px;
-    left: 0;
     border-radius: var(--border-radius-10);
     padding: 14px 22px 19px;
     background: linear-gradient(-120deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.3) 100%);
     box-shadow: 10px 14px 60px -1px rgb(0 0 0 / 20%);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+    right: 445px;
 }
 
 .students-endroll-title .h5-title {
