@@ -115,15 +115,13 @@
     </script>
 
     <!-- Libs CSS (No Bootstrap) -->
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css">
-    <link rel="stylesheet" href="assets/css/fancybox.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="src/css/pages/home.css">
+    
+    <noscript></noscript>
+    <link rel="preload" href="assets/css/bundles/home-tailwind.bundle.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/bundles/home-tailwind.bundle.css"></noscript>
 </head>
 
 <body class="fixed">
@@ -699,9 +697,9 @@
 
     <!-- Testimonial Start -->
     <section class="testimonial-sec sec-space-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full">
                     <div class="sec-title text-center">
                         <span class="sub-title">قالوا عنا</span>
                         <h2 class="h2-title">آراء مشتركي خمسة بلاننج</h2>
@@ -709,7 +707,7 @@
                 </div>
             </div>
         </div>
-        <div class="testimonial-slider-wp wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
+        <div class="testimonial-slider-wp" data-wow-duration="0.8s" data-wow-delay="0.2s">
             <div class="container-fluid">
                 <div class="swiper testimonial-slider">
                     <div class="swiper-wrapper">
@@ -1389,21 +1387,22 @@
     <!-- Back To Top End -->
 
     <!-- Core JS (No Bootstrap) -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    
 
     <!-- Libs JS -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="assets/js/bg-moving.js"></script>
-    <script src="assets/js/back-to-top.js"></script>
-    <script src="assets/js/custom.js"></script>
+
     <script src="src/js/search-dropdown.js"></script>
 
     <!-- Page Logic -->
-    <script src="assets/js/pages/home.js"></script>
+    <!-- Bundled JS -->
+    
+    <!-- Page Logic -->
+    <!-- Bundled JS -->
+    <script src="assets/js/bundles/home-tailwind.bundle.js"></script>
+    <!-- Page Logic -->
+    <script src="assets/js/pages/home-tailwind.js"></script>
 
 </body>
 
